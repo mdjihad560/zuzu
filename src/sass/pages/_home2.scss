@@ -1,0 +1,348 @@
+// text slider
+
+.fugu-text-slider-section {
+  padding: 40px 0;
+  background-color: var(--warning-200);
+  @include max(1280px) {
+    padding: 0;
+  }
+}
+
+.icon-rotate {
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.fugu-text-slider-area1{
+  padding: 21px 0;
+  background-color: var(--primary-600);
+  transform: rotate(-2.5deg);
+  @include max(1669px) {
+    padding: 13px 0;
+  }
+  @include max(1280px) {
+    margin: 0;
+    transform: rotate(0deg);
+  }
+}
+.fugu-text-slider-area2{
+  padding: 21px 0;
+  background-color: var(--success-500);
+  transform: rotate(3deg);
+  margin-top: -84px;
+  @include max(1669px) {
+    padding: 13px 0;
+    margin-top: -65px;
+}
+@include max(1280px) {
+  margin: 0;
+  transform: rotate(0deg);
+}
+}
+.fugu-text-slider {
+  &-data{
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      flex-direction: row-reverse;
+      @include max(767px) {
+          text-align: center;
+          display: block!important;
+      }
+      h3{
+          font-weight: 700;
+          font-size: 28px;
+          display: inline-block;
+          margin: 0 15px;
+          line-height: 36px;
+          letter-spacing: 1px;
+          color: var(--gray-800);
+          @include max(1669px) {
+            font-size: 22px;
+          }
+          @include max(1500px) {
+            font-size: 18px;
+          }
+          
+
+      }
+  }
+  &-icon{
+      flex-shrink: 0;
+      img{
+        margin: 0 auto;
+      }
+      @include max(600px) {
+          margin-bottom: 10px;
+      }
+  }
+  
+}
+
+// trading section
+
+.fugu-trading{
+  &-card{
+    &-thumb{
+      position: relative;
+      padding-left: 140px;
+      z-index: 2;
+      @include max(766px) {
+        padding-left: 70px;
+      }
+      img{
+        
+         @include max(991px) {
+          width: 100%;
+         }
+      
+      }
+      @include max(991px) {
+        margin-bottom: 40px;
+      }
+    }
+    &-thumb2{
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      width: 33.5%;
+      position: absolute;
+      transform: translateY(-50%);
+      img{
+        width: 100%;
+      }
+    }
+  }
+  &-card2{
+    text-align: right;
+    .fugu-trading-card-thumb{
+      padding-left: 0;
+      @include max(991px) {
+       padding-left: 160px;
+       margin-bottom: 80px;
+      }
+      @include max(767px) {
+        padding-left: 80px;
+       }
+       @include max(575px) {
+        margin-bottom: 50px;
+       }
+    }
+    .fugu-trading-card-thumb2 {
+      top: auto;
+      left: 16%;
+      transform: none;
+      bottom: -8%;
+      width: 39%;
+      @include max(1399px) {
+        left: 5%;
+      }
+      @include max(991px) {
+        left: 0;
+      }
+  }
+  .fugu-shape7 {
+      top: -29%;
+      z-index: -1;
+      right: -27%;
+  }
+  .fugu-shape6 {
+      top: 22%;
+      left: -3%;
+  }
+  }
+  
+}
+
+.fugu-shape6 {
+  position: absolute;
+  top: -10%;
+  left: -23%;
+  z-index: 0;
+  @include max(766px) {
+    left: -40%;
+  }
+  @include max(575px) {
+    display: none;
+  }
+}
+.fugu-shape7 {
+  position: absolute;
+  top: -35%;
+  z-index: -1;
+  right: -13%;
+  @include max(575px) {
+    display: none;
+  }
+}
+
+// trading section
+.fugu-trading-section2{
+  padding: 120px 0 150px;
+  overflow: hidden;
+  background-color: var(--warning-100);
+  @include max(1399px) {
+    padding: 120px 0;
+  }
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+
+}
+
+
+// text slider
+.fugu--text-slider-section2{
+  background: var(--gray-800);
+}
+
+// about section
+.fugu--about-section{
+  overflow: hidden;
+  padding: 120px 0;
+  @include max(991px) {
+    padding: 100px 0 ;
+  }
+  @include max(767px) {
+    padding: 80px 0 ;
+  }
+  .fugu--default-content{
+    @include max(991px) {
+      max-width: 500px;
+    }
+  }
+}
+.fugu--swiper-slider-wrap{
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}
+
+.fugu--double-star {
+  position: absolute;
+  left: -90px;
+  bottom: 15%;
+  -webkit-animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
+}
+
+// default section
+.fugu--artwork-section {
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
+  @include max(991px) {
+    padding: 100px 0 0;
+  }
+  @include max(767px) {
+    padding: 80px 0 0;
+  }
+  .fugu--default-content{
+    @include max(991px) {
+      max-width: 500px;
+    }
+  }
+}
+.fugu--artwork {
+  &-right{
+    text-align: right;
+    position: relative;
+    z-index: 0;
+    @include max(991px) {
+      text-align: center;
+    }
+    &.left{
+      text-align: left;
+      @include max(991px) {
+        text-align: center;
+      }
+    }
+  }
+  &-thumb{
+    display: inline-block;
+    position: relative;
+    transform: rotate(3deg);
+    @include max(991px) {
+      transform: rotate(0deg)!important;
+      margin-bottom: 40px;
+    }
+  }
+  &-data{
+    position: absolute;
+    left: -105px;
+    bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 14px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include max(575px) {
+      width: 150px;
+      height: 150px;
+      left: 0;
+      bottom: 0;
+    }
+    p{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #13111A;
+      transform: rotate(-10deg);
+      @include max(575px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  
+}
+
+// collection section
+.fugu--collection-section{
+  background-color: var(--warning-600);
+}
+
+// roadmap section
+
+.fugu--roadmap-v2{
+  background: linear-gradient(180deg, #EEE6D0 -29.02%, rgba(255, 255, 255, 0) 160.21%);
+  .fugu--section-title {
+    max-width: 485px;
+    text-align: left;
+    margin: 0 0 75px;
+    @include max(991px) {
+      margin: 0 0 50px;
+    }
+    p{
+      padding: 0;
+    }
+}
+
+}

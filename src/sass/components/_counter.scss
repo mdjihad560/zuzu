@@ -1,0 +1,224 @@
+.fugu-counter{
+  &-section{
+    padding: 80px 0;
+    .fugu-default-content{
+      @include max(1199px) {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+  &-wrap{
+    display: flex;
+    text-align: center;
+    @include max(1199px) {
+      margin-bottom: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  &-data{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    @include max(1399px) {
+      padding: 25px;
+      width: 200px;
+      height: 200px;
+    }
+    @include max(1199px) {
+      padding: 30px;
+      width: 220px;
+      height: 220px;
+    }
+    &:nth-child(2) {
+      margin-left: -30px;
+      @include max(479px) {
+        margin-left: 0;
+        margin-top: -30px;
+      }
+      @include max(479px) {
+        margin-top: -30px;
+      }
+    }
+    &:nth-child(3) {
+      margin-left: -30px;
+      @include max(767px) {
+        margin-left: 0;
+        margin-top: -58px;
+      }
+      @include max(479px) {
+        margin-top: -30px;
+      }
+    }
+    h2{
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+}
+
+.fugu--counter-wrap {
+  display: flex;
+  max-width: 385px;
+  justify-content: space-between;
+  margin-top: 55px;
+  @include max(991px){
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  @include max(410px){
+    margin-top: 25px;
+  }
+  
+}
+
+.fugu--counter-data{
+  h2{
+    font-size: 48px;
+    line-height: 1;
+    color: white;
+    strong{
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+// counter 2
+.fugu--counter-wrap2{
+  @include max(991px) {
+    margin: 30px 0 0;
+  }
+  .fugu--counter-data{
+    h2{
+      margin: 0 0 10px;
+      strong{
+        background: none;
+        color: var(--gray-800);
+        -webkit-text-fill-color: var(--gray-800);
+      }
+    }
+    p{
+      font-weight: 600;
+      opacity: 1!important;
+    }
+  }
+}
+
+
+.fugu--counter-wrap3{
+  max-width: 100%;
+  margin: 0;
+  flex-wrap: wrap;
+  .fugu--counter-data{
+    @include max(767px) {
+      flex: 0 0 50%;
+      text-align: center;
+      margin-bottom: 40px;
+      &:nth-child(3), 
+      &:nth-child(4){
+        margin-bottom: 0;
+      }
+    }
+    h2{
+      z-index: 0;
+      margin: 0 0 20px;
+      font-size: 60px;
+      color: var(--gray-800);
+      font-family: $another-font;
+      position: relative;
+      @include max(1199px) {
+        font-size: 48px;
+      }
+      @include max(767px) {
+        font-size: 36px;
+      }
+      &:before {
+        content: " ";
+        left: 0;
+        top: -15px;
+        z-index: -1;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        position: absolute;
+        background-color:rgba(255, 107, 85, 0.2);
+        @include max(1199px) {
+          width: 78px;
+          height: 78px;
+        }
+        @include max(767px) {
+          width: 60px;
+          height: 60px;
+          left: 45%;
+          transform: translateX(-50%);
+        }
+      }
+      strong{
+        background: none;
+        color: var(--gray-800);
+        -webkit-text-fill-color: var(--gray-800);
+      }
+    }
+    p{
+      opacity: 1!important;
+      font-size: 30px;
+      letter-spacing: -1px;
+      color: #13111A;
+      @include max(1199px) {
+        font-size: 24px;
+      }
+      @include max(991px) {
+        font-size: 20px;
+      }
+      @include max(767px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+// counter v8
+.fugu--counter-wrap4{
+  max-width: 100%;
+  .fugu--counter-data{
+    padding-right: 15px;
+    margin-right: 35px;
+    border-right: 1px solid rgba(19, 17, 26, 0.1);
+    &:last-child{
+      border: none;
+    }
+    h2{
+      color: var(--pink-500);
+      margin-bottom: 0;
+      strong{
+        background: none;
+        color: var(--pink-500);
+        -webkit-text-fill-color: var(--pink-500);
+      }
+    }
+    
+  }
+}

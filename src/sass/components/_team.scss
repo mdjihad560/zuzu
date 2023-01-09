@@ -1,0 +1,407 @@
+.fugu-team-page{
+  padding-top: 110px;
+  @include max(991px) {
+    padding-top: 100px;
+  }
+  @include max(767px) {
+    padding-top: 80px;
+  }
+}
+
+.fugu-team{
+  &-wrap{
+    margin-bottom: 24px;
+    &.wrap2{
+      background: #FFFFFF;
+      box-shadow: 0px 4px 60px rgb(0 0 0 / 6%);
+      border-radius: 10px;
+      height: calc(100% - 24px);
+      overflow: hidden;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      h4{
+        margin-bottom: 40px;
+      }
+      @include max(767px) {
+        height: 100%;
+      }
+    }
+  }
+  &-thumb{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s;
+    }
+    &:hover img{
+      transform: scale(1.07) rotate(2deg);
+    }
+  }
+  &-data{
+    bottom: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    position: absolute;
+    background-color: #fff;
+    h5{
+      font-weight: 700;
+      display: block;
+      margin-bottom: 5px;
+      line-height: 1;
+      a{
+        color: var(--gray-800);
+        transition: all 0.4s;
+        &:hover{
+          color: var(--warning-500);
+        }
+      }
+    }
+    p{
+      font-size: 14px;
+      margin: 0;
+    }
+    &-wrap{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// team single
+.fugu-single-team-page{
+  padding: 120px 0 100px;
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+.fugu-team-single {
+  &-wrap{
+    padding: 60px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 60px rgb(0 0 0 / 6%);
+    @include max(1199px) {
+      padding: 40px;
+    }
+    @include max(767px) {
+      padding: 30px;
+    }
+  }
+  &-thumb{
+    overflow: hidden;
+    border-radius: 10px;
+    @include max(991px) {
+      margin-bottom: 30px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-data{
+    @include max(1199px) {
+      margin-left: 40px;
+    }
+    @include max(991px) {
+      margin: 0;
+    }
+    h2{
+      margin-bottom: 10px;
+    }
+    span{
+      display: block;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: var(--gray-800);
+    }
+  }
+  
+}
+
+.fugu-team-single-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include max(479px) {
+    display: block;
+  }
+  margin-top: 35px;
+  .fugu-social-icon {
+      margin: 0;
+      @include max(479px) {
+        margin: 0 0 20px;
+      }
+      ul{
+        li{
+          a{
+            background-color: rgba(19, 17, 26, 0.05);
+            &:hover{
+              background-color: var(--gray-800);
+            }
+            path{
+              fill: var(--gray-800);
+            }
+            &:hover path{
+              fill: var(--warning-500);
+            }
+          }
+        }
+      }
+  }
+}
+
+
+.fugu-team-information {
+  &-wrap{
+    padding-bottom: 70px;
+  }
+ 
+    margin-bottom: 24px;
+    ul{
+      li{
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        &:before{
+          content: "";
+          left: 0;
+          top: 10px;
+          width: 8px;
+          height: 8px;
+          border-radius: 100px;
+          position: absolute;
+          background-color: var(--gray-800);
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+        a{
+          transition: all 0.4s;
+          color: rgba(19, 17, 26, 0.8);
+          &:hover{
+            color: var(--warning-500);
+          }
+        }
+      }
+    }
+  
+}
+
+
+
+
+//   team section
+.fugu--team-section{
+  position: relative;
+  z-index: 0; 
+  background-color: var(--gray-800);
+  border-bottom: 1px solid #26242C;
+}
+
+
+
+.fugu--team {
+  &-wrap{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    background-color: #201c2c;
+    border: 1px solid white;
+  }
+  &-left{
+    display: flex;
+    align-items: center;
+  }
+  &-thumb{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+  &-data{
+    h4{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+      color: var(--gray-10);
+      font-family: $body-font;
+    }
+    p{
+      opacity: 0.8;
+      margin: 0;
+      color: var(--gray-10);
+    }
+  }
+  
+}
+
+// team home 2
+
+.fugu--team-two, 
+.fugu--team-three{
+  border: none;
+  background: var(--gray-10);
+  .fugu--team {
+    &-wrap{
+      display: block;
+      text-align: center;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
+    &-thumb{
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      margin-bottom: 20px;
+    }
+    &-data{
+      h4{
+        line-height: 1;
+        margin-bottom: 7px;
+        color: var(--gray-800);
+      }
+      p{
+        font-size: 18px;
+        opacity: 0.8;
+        color: var(--gray-800);
+        margin: 0 0 20px;
+      }
+    }
+  }
+  
+}
+.fugu--team-two{
+  padding: 0 0 120px;
+  @include max(991px) {
+    padding: 0 0 100px;
+  }
+  @include max(767px) {
+    padding: 0 0 80px;
+  }
+  .fugu--team-wrap {
+    margin-bottom: 40px;
+  }
+}
+.version-04.fugu--team-two{
+  padding: 110px 0 80px;
+  @include max(991px) {
+    padding: 100px 0 60px;
+  }
+  @include max(767px) {
+    padding: 80px 0 40px;
+  }
+}
+
+
+// team three about light blue
+.fugu--team-section.fugu--team-three{
+  background-color: var(--gray-10);
+  border: none;
+}
+.fugu--team-three{
+  .fugu--team{
+    &-wrap{
+      padding: 40px;
+      border-radius: 3px;
+      border: 1px solid var(--gray-800);
+    }
+    &-thumb{
+      width: 216px;
+      height: 216px;
+      border-radius: 100%;
+      margin: 0 auto 20px;
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        width: 175px;
+        height: 175px;
+      }
+    }
+    
+  }
+}
+
+.fugu--inner-section.bg-white {
+  background: var(--gray-10);
+}
+
+.fugu--team-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team-page .fugu--breadcrumbs-data {
+  max-width: 880px;
+}
+
+.dark-version{
+  .fugu--team-data p, 
+  .fugu--team-data h4{
+    color: #fff;
+  }
+}
+
+// team 06
+.fugu-team{
+  &-wrap2{
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &-thumb2{
+    margin-bottom: 25px;
+    transition: all 0.4s;
+  }
+  &-data2{
+    h4{
+      font-family: $body-font;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 20px;;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+        margin-left: 10px;
+      }
+      path{
+        transition: all 0.4s;
+      }
+      &:hover path{
+        fill: var(--primary-400);
+      }
+      
+    }
+    &.fugu-v8{
+        p{
+          &:hover path{
+            fill: var(--pink-500);
+          }
+        }
+    }
+  }
+}

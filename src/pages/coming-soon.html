@@ -1,0 +1,53 @@
+
+
+{% extends "layout/layout.html" %}
+ {% block content %}
+ <div class="coming-soon-section">
+  <div class="container">
+    <div class="coming-soon-column">
+      <div class="coming-soon-logo">
+        <a href="index.html"><img src="assets/images/logo/logo-black.svg" alt=""></a>
+      </div>
+      <div class="coming-soon-content">
+        <h2>We are coming soon...</h2>
+        <p>We are bringing you something amazing. Enter your email to receive a notification email when we launch it.</p>
+      </div>
+      <div class="fugu-countdown-wrap">
+        <div class="fugu-countdown-item wow fadeInUpX" data-wow-delay="0s">
+          <div class="countdown-days">
+            <div class="number"></div>
+          </div>
+          <p>Days</p>
+        </div>
+        <div class="fugu-countdown-item wow fadeInUpX" data-wow-delay=".10s">
+          <div class="countdown-hours">
+            <div class="number"></div>
+          </div>
+          <p>Hours</p>
+        </div>
+        <div class="fugu-countdown-item wow fadeInUpX" data-wow-delay=".20s">
+          <div class="countdown-minutes">
+            <div class="number"></div>
+          </div>
+          <p>Minutes</p>
+        </div>
+        <div class="fugu-countdown-item wow fadeInUpX" data-wow-delay=".30s">
+          <div class="countdown-seconds">
+            <div class="number"></div>
+          </div>
+          <p>Seconds</p>
+        </div>
+      </div>
+      <form action="#">
+        <div class="fugu-newsletter">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" id="fugu-submit-btn">Get Notified</button>
+          <p>We do not share your information with any third party & no spam</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- End coming soon -->
+
+{% endblock %}

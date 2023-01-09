@@ -1,0 +1,75 @@
+.fugu-cta-section{
+  padding: 95px 0;
+  background-color: var(--warning-400);
+  @include max(767px) {
+    padding: 80px 0;
+  }
+  .fugu-default-content {
+    &.large-content{
+      @include max(991px) {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+     
+    }
+  }
+}
+.fugu-cta-app-btn-wrap {
+  width: 100%;
+  text-align: right;
+  @include max(991px) {
+    text-align: center;
+  }
+}
+
+
+.fugu--cta-section {
+  z-index: 0;
+  background-size: cover;
+  position: relative;
+  background-color: var(--gray-800);
+}
+
+.fugu--cta-wrap{
+  border-radius: 10px;
+  padding: 80px 110px;
+  background-color: var(--primary-500);
+  @include max(1400px) {
+    padding: 80px;
+  }
+  @include max(991px) {
+    text-align: center;
+  }
+  @include max(767px) {
+    padding: 50px;
+  }
+  @include max(575px) {
+    padding: 35px;
+  }
+}
+
+// cta v6
+.fugu-cta2-wrap{
+  border-radius: 20px;
+  padding: 80px;
+  background-color: var(--primary-400);
+  @include max(991px) {
+    padding: 60px;
+  }
+  @include max(767px) {
+    padding: 40px;
+  }
+}
+
+.fugu-cta-footer{
+  margin-top: 50px;
+  @include max(767px) {
+    margin-top: 30px;
+  }
+}
+
+.white-icon-btn{
+  color: var(--gray-800)!important;
+  background-color: var(--gray-10)!important;
+}

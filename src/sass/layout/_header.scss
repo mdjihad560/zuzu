@@ -1,0 +1,68 @@
+
+header.fugu-header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  padding: 13px 0;
+  transition: all 0.4s;
+}
+header.fugu-header-section.sticky-menu, header.fugu--header-section.sticky-menu{
+  padding: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 80px rgb(0 0 0 / 6%);
+}
+.site-menu-main .nav-link-item{
+  color: var(--gray-800);
+}
+
+
+// header three
+
+header.fugu--header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  padding: 13px 0;
+  transition: all 0.4s;
+}
+
+.fugu-header-dark .site-menu-main .nav-link-item{
+  color: var(--gray-10);
+}
+.fugu-header-dark.site-header .mobile-menu-trigger span {
+  background-color: white;
+}
+.fugu-header-dark.site-header .mobile-menu-trigger span:before, 
+.fugu-header-dark.site-header .mobile-menu-trigger span:after {
+  background-color: white;
+}
+
+.fugu-responsive-btn{
+  display: none;
+  margin-top: 40px;
+  padding: 0 15px;
+  .fugu-btn.fugu-header-btn{
+    margin: 25px 0 0;
+    padding: 0 33px;
+  }
+  @include max(991px) {
+    display: block;
+  }
+}
+
+.fugu-responsive-btn{
+  display: none;
+  margin-top: 40px;
+  padding: 0 15px;
+  .fugu--btn.fugu--menu-btn1, 
+  .fugu--btn.fugu--menu-btn2, 
+  .fugu--btn.fugu--menu-btn3{
+    margin: 25px 0 0;
+    padding: 0 33px;
+  }
+  @include max(991px) {
+    display: block;
+  }
+}

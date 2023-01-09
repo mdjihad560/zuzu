@@ -1,0 +1,26 @@
+.fugu-cartoon-thumb{
+  @include max(991px) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.cartoon2{
+  transform: translatey(0);
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.fugu-newsletter-wrap2{
+  .fugu-section-title.title-large{
+    margin: 0;
+    h2{
+      margin-bottom: 20px;
+    }
+    p{
+      color: #FFFFFF;
+      opacity: 0.8;
+    }
+  }
+}

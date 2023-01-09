@@ -1,0 +1,1544 @@
+.fugu-blog{
+  &-card{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-700);
+    transition: all 0.4s;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    &:hover img{
+      transform: scale(1.07) rotate(2deg);
+    }
+    &:hover{
+      background-color: white;
+      border: 1px solid white;
+      box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+    }
+  }
+  &-thumb{
+    overflow: hidden;
+    height: 263px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px;
+      transition: all 00.4s;
+    }
+    @include max(991px) {
+      height: auto;
+    }
+  }
+  &-meta{
+    margin-bottom: 18px;
+    ul{
+      li{
+        font-size: 16px;
+        padding-right: 25px;
+        position: relative;
+        display: inline-block;
+        &:before {
+          content: "";
+          right: 5px;
+          top: 13px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: rgba(19, 17, 26, 0.8);
+        }
+        &:last-child:before {
+          content: none;
+        }
+        a{
+          color: rgba(19, 17, 26, 0.8);
+          &:hover{
+            color: var(--warning-500);
+          }
+        }
+      }
+    }
+  }
+  &-content{
+    h5{
+      margin-bottom: 7px;
+      a{
+        color: var(--gray-800);
+        &:hover{
+          color: var(--warning-500);
+        }
+      }
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// sidebar
+.fugu-blog-sidebar {
+  border: 1px solid var(--gray-700);
+  border-radius: 10px;
+  padding: 30px;
+  @include max(991px) {
+    margin-top: 40px;
+  }
+}
+.fugu-product-search{
+  position: relative;
+}
+#fugu-search-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.fugu-product-search{
+  input{
+    padding: 10px 35px 10px 20px!important;
+    border-radius: 4px;
+  }
+}
+.fugu-sidebar{
+  &-item{
+    margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &-title{
+      margin-bottom: 25px;
+      h5{
+        margin: 0;
+        font-size: 18px;
+        line-height: 38px;
+        font-weight: 600;
+        display: inline-block;
+        font-family: $body-font;
+        border-bottom: 2px solid var(--gray-800);
+      }
+    }
+  }
+}
+
+.fugu-categories{
+  ul{
+    li{
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+      &:last-child{
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+      a{
+        display: block;
+        color: var(--gray-800);
+        transition: all 0.4;
+        &:hover{
+          color: var(--warning-500);
+        }
+      }
+    }
+  }
+}
+
+.fugu-recent-post-item{
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  a{
+    display: block;
+    img{
+      margin-bottom: 13px;
+      border-radius: 3px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .fugu-blog-meta{
+    margin-bottom: 10px;
+  }
+  h6{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: $body-font;
+    a{
+      color: var(--gray-800);
+    }
+  }
+}
+
+.fugu-tags{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      flex: 0 0 48%;
+      margin-bottom: 15px;
+      a{
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 3px;
+        text-align: center;
+        padding: 13px 10px;
+        line-height: 24px;
+        color: var(--gray-800);
+        border-radius: 3px;
+        transition: all 0.4s;
+        background-color: rgba(2, 2, 30, 0.03);
+        &:hover{
+          background-color: var(--warning-500);
+        }
+      }
+    }
+  }
+}
+
+// blog single
+
+.fugu-blog-single{
+  &-wrap{
+    margin-right: 40px;
+    @include max(1199px) {
+      margin: 0;
+    }
+    a{
+      display: block;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .fugu-blog-meta{
+      margin-bottom: 35px;
+    }
+    ul{
+      li{
+        span{
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.fugu-user{
+  &-wrap{
+    margin: 40px 0;
+    padding: 29px;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--warning-300);
+    @include max(767px) {
+      display: block;
+    }
+  }
+  &-thumb{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 15px;
+    border-radius: 100%;
+    @include max(767px) {
+      margin: 0 0 15px;
+    }
+    img{
+      object-fit: cover;
+    }
+  }
+  &-data{
+    ul{
+      margin-bottom: 15px;
+      li{
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 700;
+        padding-right: 20px;
+        position: relative;
+        &:last-child{
+          padding-right: 0;
+        }
+        &:before {
+          content: "";
+          right: 4px;
+          top: 13px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50px;
+          position: absolute;
+          background-color: rgba(19, 17, 26, 0.8);
+        }
+        &:last-child:before{
+          content: none;
+        }
+        span{
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.fugu-blog-post {
+  &-wrap{
+    padding: 40px 0 35px;
+    border-top: 1px solid rgba(19, 17, 26, 0.1);
+    border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include max(767px) {
+      display: block;
+    }
+  }
+  &-column{
+    flex: 0 0 37%;
+    h6{
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0;
+    }
+    &.post-column-right{
+      text-align: right;
+      @include max(767px) {
+        margin-top: 30px;
+      }
+      .fugu-blog-post-arrow{
+        justify-content: flex-end;
+      }
+      .fugu-blog-post-arrow-icon{
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  &-arrow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    &:hover .fugu-blog-post-arrow-icon{
+      background-color: var(--warning-500);
+      border: 1px solid var(--warning-500);
+    }
+    &:hover .fugu-blog-post-arrow-data p{
+      color: var(--gray-800);
+    }
+    &-icon{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      flex-shrink: 0;
+      margin-right: 15px;
+      transition: all 0.4s;
+      border: 1px solid rgba(19, 17, 26, 0.1);
+      
+      img{
+        margin: 0;
+        width: 18px;
+        height: auto;
+      }
+    }
+    &-data{
+      p{
+        font-weight: 600;
+        color: rgba(19, 17, 26, 0.8);
+      }
+    }
+  }
+  
+}
+
+.fugu-comment{
+  &-section{
+    h5{
+      margin-bottom: 40px;
+    }
+  }
+  &-wrap{}
+  &-item{
+    display: flex;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+    &:last-child{
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    &:nth-child(2) {
+      padding-left: 90px;
+      @include max(767px) {
+        padding-left: 0;
+      }
+    }
+  }
+  &-author{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 20px;
+    &.author2{
+      width: 50px;
+      height: 50px;
+    }
+    img{
+      object-fit: cover;
+    }
+    &-data{
+      margin-right: 90px;
+      @include max(767px) {
+        margin-right: 0;
+      }
+      h6{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $body-font;
+        margin-bottom: 5px;
+      }
+      span{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+a.comment-reply {
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--gray-800);
+  transition: all 0.4s;
+  &:hover{
+    color: var(--warning-500);
+  }
+}
+
+.fugu-input-field {
+  &-section{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 80px rgb(0 0 0 / 6%);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 40px;
+    h5{
+      margin-bottom: 30px;
+    }
+    .fugu-input-field {
+      textarea{
+        height: 250px;
+        @include max(991px) {
+          height: 150px;
+        }
+        @include max(767px) {
+          height: 100px;
+        }
+      }
+    }
+    button#fugu-input-submit {
+      margin-top: 16px;
+      @include max(767px) {
+        margin-top: 0;
+      }
+     
+    }
+  }
+  margin-bottom: 20px;
+  
+  
+}
+
+button#fugu-input-submit {
+  width: 196px;
+  height: 55px;
+  left: 182px;
+  top: 4119px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.4s;
+  background-color: var(--warning-500);
+  &:hover{
+    color: var(--gray-10);
+    background-color: var(--gray-800);
+  }
+}
+
+// fugo + nexto
+
+// blog top
+.fugu--blog-top-wrap {
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  @include max(767px) {
+    padding-bottom: 80px;
+  }
+  .fugu--blog-wrap{
+    position: relative;
+    background: transparent;
+    backdrop-filter: inherit;
+    &:hover .fugu--blog-thumb img{
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .fugu--blog-thumb {
+    height: 550px;
+    overflow: inherit;
+    position: relative;
+    margin-left: 34%;
+    @include max(991px) {
+      margin: 0;
+      height: auto;
+    }
+}
+  .fugu--blog-content {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    background: rgba(90, 75, 124, 0.2);
+    backdrop-filter: blur(400px);
+    border-radius: 10px;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    width: 642px;
+    @include max(991px) {
+      position: inherit;
+      transform: inherit;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
+.fugu--blog-shape3 {
+  position: absolute;
+  top: 4%;
+  right: 0;
+  z-index: -1;
+}
+
+// blog filter section2
+.fugu--inner-section{
+  z-index: 0;
+  position: relative;
+}
+.dark-version{
+  background-color: var(--gray-800);
+}
+.fugu--blog-sidebar-section{
+  &.light-version{
+    padding-bottom: 120px;
+    @include max(991px) {
+      padding-bottom: 100px;
+    }
+    @include max(767px) {
+      padding-bottom: 80px;
+    }
+  }
+}
+.fugu--blog-filtering{
+  &.dark-version{
+    padding-top: 120px;
+    @include max(991px) {
+      padding-top: 95px;
+    }
+    @include max(767px) {
+      padding-top: 75px;
+    }
+  }
+  .fugu--blog-wrap{
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+  .fugu--portfolio-wrap {
+      margin-left: -24px;
+  }
+  .fugu--portfolio-menu{
+    margin-bottom: 0;
+    @include max(1199px) {
+      margin-top: 30px;
+      ul{
+        li{
+          flex: 0 0 19%;
+        }
+      }
+    }
+    @include max(991px) {
+      ul{
+        li{
+          flex: 0 0 23%;
+        }
+      }
+    }
+    @include max(767px) {
+      ul{
+        li{
+          flex: 0 0 48.5%;
+        }
+      }
+    }
+    @include max(420px) {
+      ul{
+        li{
+          flex: 0 0 100%;
+        }
+      }
+    }
+    
+  }
+  .fugu--section-title-wrap{
+    align-items: center;
+    @include max(1199px) {
+      display: block;
+      margin-bottom: 60px;
+    }
+    @include max(767px) {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+  .fugu--default-content.content-sm {
+    h2{
+      margin: 0;
+    }
+  }
+  .fugu--card-wrap {
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+}
+
+// blog sidebar dark
+.fugu--blog-sidebar{
+  @include max(991px) {
+    margin-top: 40px;
+  }
+  .fugu--newsletter{
+    @include max(991px) {
+      max-width: 100%;
+    }
+  }
+}
+.fugu--blog-sidebar-item {
+  background: rgba(90, 75, 124, 0.2);
+  backdrop-filter: blur(400px);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin-bottom: 24px;
+  h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: $body-font;
+    color: var(--gray-10);
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.fugu--category{
+  ul{
+    li{
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        font-size: 18px;
+        line-height: 30px;
+        opacity: 0.8;
+        color: var(--gray-10);
+        transition: all 0.4s;
+        &:hover{
+          color: #0080ff;
+        }
+      }
+    }
+  }
+}
+
+.fugu--blog-post {
+  &-wrap{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-thumb{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    @include max(991px) {
+      height: auto;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+  &-data{
+    p{
+      color: #FFFFFF;
+      opacity: 0.4;
+      margin-bottom: 10px;
+    }
+    h5{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: $body-font;
+      margin: 0;
+      color: #FFFFFF;
+    }
+  }
+  
+}
+
+.fugu--tags{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      a{
+        font-size: 18px;
+        color: #fff;
+        opacity: .8;
+        margin: 6px;
+        padding: 14px 31px;
+        display: block;
+        border-radius: 10px;
+        transition: all 0.4s;
+        background-color: var(--gray-900);
+        &:hover{
+          background-color: #0080ff;
+        }
+      }
+    }
+  }
+}
+
+// blog light versions
+
+// blog top
+.fugu--blog-top-wrap {
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  @include max(767px) {
+    padding-bottom: 80px;
+  }
+  .fugu--blog-wrap{
+    position: relative;
+    background: transparent;
+    backdrop-filter: inherit;
+    &:hover .fugu--blog-thumb img{
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .fugu--blog-thumb {
+    height: 550px;
+    overflow: inherit;
+    position: relative;
+    margin-left: 34%;
+    @include max(991px) {
+      margin: 0;
+      height: auto;
+    }
+}
+  .fugu--blog-content {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    background: rgba(90, 75, 124, 0.2);
+    backdrop-filter: blur(400px);
+    border-radius: 10px;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    width: 642px;
+    @include max(991px) {
+      position: inherit;
+      transform: inherit;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
+.fugu--blog-shape3 {
+  position: absolute;
+  top: 4%;
+  right: 0;
+  z-index: -1;
+}
+
+// blog filter section2
+.fugu--inner-section{
+  z-index: 0;
+  position: relative;
+}
+.dark-version{
+  background-color: var(--gray-800);
+}
+.fugu--blog-sidebar-section{
+  &.light-version{
+    padding-bottom: 120px;
+    @include max(991px) {
+      padding-bottom: 100px;
+    }
+    @include max(767px) {
+      padding-bottom: 80px;
+    }
+  }
+}
+.fugu--blog-filtering{
+  &.dark-version{
+    padding-top: 120px;
+    @include max(991px) {
+      padding-top: 95px;
+    }
+    @include max(767px) {
+      padding-top: 75px;
+    }
+  }
+  .fugu--blog-wrap{
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+  .fugu--portfolio-wrap {
+      margin-left: -24px;
+  }
+  .fugu--portfolio-menu{
+    margin-bottom: 0;
+    @include max(1199px) {
+      margin-top: 30px;
+      ul{
+        li{
+          flex: 0 0 19%;
+        }
+      }
+    }
+    @include max(991px) {
+      ul{
+        li{
+          flex: 0 0 23%;
+        }
+      }
+    }
+    @include max(767px) {
+      ul{
+        li{
+          flex: 0 0 48.5%;
+        }
+      }
+    }
+    @include max(420px) {
+      ul{
+        li{
+          flex: 0 0 100%;
+        }
+      }
+    }
+    
+  }
+  .fugu--section-title-wrap{
+    align-items: center;
+    @include max(1199px) {
+      display: block;
+      margin-bottom: 60px;
+    }
+    @include max(767px) {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+  .fugu--default-content.content-sm {
+    h2{
+      margin: 0;
+    }
+  }
+  .fugu--card-wrap {
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+}
+
+// blog sidebar dark
+.fugu--blog-sidebar{
+  @include max(991px) {
+    margin-top: 40px;
+  }
+  .fugu--newsletter{
+    @include max(991px) {
+      max-width: 100%;
+    }
+  }
+}
+.fugu--blog-sidebar-item {
+  background: rgba(90, 75, 124, 0.2);
+  backdrop-filter: blur(400px);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin-bottom: 24px;
+  h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: $body-font;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.fugu--category{
+  ul{
+    li{
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        font-size: 18px;
+        line-height: 30px;
+        opacity: 0.8;
+        color: var(--gray-10);
+        transition: all 0.4s;
+        &:hover{
+          color: #0080ff;
+        }
+      }
+    }
+  }
+}
+
+.fugu--blog-post {
+  &-wrap{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-thumb{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    @include max(991px) {
+      height: auto;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+  &-data{
+    p{
+      color: #FFFFFF;
+      opacity: 0.4;
+      margin-bottom: 10px;
+    }
+    h5{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: $body-font;
+      margin: 0;
+    }
+  }
+  
+}
+
+.fugu--tags{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      a{
+        font-size: 18px;
+        color: #fff;
+        opacity: .8;
+        margin: 6px;
+        padding: 14px 31px;
+        display: block;
+        border-radius: 10px;
+        transition: all 0.4s;
+        background-color: var(--gray-900);
+        &:hover{
+          background-color: #0080ff;
+        }
+      }
+    }
+  }
+}
+
+// blog light versions
+
+.light-version{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
+  .fugu--breadcrumbs-data{
+    h1, 
+    p{
+      color: var(--gray-800);
+    }
+    h1{
+      font-family: $another-font;
+    }
+  }
+  .fugu--newsletter.fugu--search {
+    input{
+      border: 1px solid #D9D9D9!important;
+      border-radius: 3px;
+      &:focus{
+        border: 1px solid var(--danger-500)!important;
+      }
+    }
+  }
+  #fugu--submit-btn{
+    border-radius: 3px;
+    color: var(--gray-800);
+    background: var(--danger-500);
+  }
+  .fugu--blog-top-wrap{
+    border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+    .fugu--blog{
+      &-content{
+        h3{
+          font-size: 42px;
+          line-height: 53px;
+          @include max(991px) {
+            font-size: 36px;
+            line-height: 42px;
+          }
+          @include max(767px) {
+            font-size: 28px;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+  .fugu--blog{
+    &-content {
+      backdrop-filter: inherit;
+      background: #FFFFFF;
+      border: none;
+      box-shadow: 0px 8px 80px rgb(19 17 26 / 6%);
+      border-radius: 3px;
+      p{
+        color: var(--gray-800);
+        opacity: 0.8;
+        }
+    }
+    &-date{
+      ul{
+        li{
+          a{
+            color: var(--gray-800);
+          }
+          
+        }
+      }
+    }
+    &-title{
+      h3{
+        color: var(--gray-800);
+        font-family: $another-font;
+        transition: all 0.4s;
+        &:hover{
+          color: var(--danger-500);
+        }
+      }
+    }
+  }
+  .fugu--blog-user-data {
+    span{
+      color: var(--gray-800);
+    }
+  }
+  .fugu--default-content{
+    h2{
+      color: var(--gray-800);
+      font-family: $another-font;
+    }
+  }
+  .fugu--portfolio-menu {
+    ul{
+      li{
+        background: none;
+        &.active span{
+          color: var(--gray-800);
+          background-color: var(--danger-500);
+          border: 1px solid var(--danger-500);
+        }
+        span{
+          color: var(--gray-800);
+          background: #FFFFFF;
+          border: 1px solid #D9D9D9;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+// blog light
+.fugu--blog-wrap2 .fugu--blog-content {
+  background-color: transparent!important;
+}
+
+
+// blog light sidebar
+.fugu--blog-sidebar-item {
+  backdrop-filter: inherit;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+}
+.fugu--blog-sidebar-item {
+  h4{
+    color: var(--gray-800);
+  }
+}
+.fugu--category {
+  ul{
+    li{
+      a{
+        color: rgba(19, 17, 26, 0.8);
+        &:hover{
+          color: var(--danger-500);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.fugu--blog-post-data {
+  p, h5{
+    color: var(--gray-800);
+  }
+}
+.fugu--tags {
+  ul{
+    li{
+      a{
+        background: rgba(38, 36, 44, 0.1);
+        border-radius: 3px;
+        color: rgba(19, 17, 26, 0.8);
+        &:hover{
+          opacity: 1;
+          color: var(--gray-800);
+          background-color: var(--danger-500);
+        }
+      }
+    }
+  }
+}
+  
+}
+
+.light-version{
+  .fugu--blog-wrap{
+    &.fugu--blog-wrap2{
+        a.fugu--readmore-btn{
+          color: var(--gray-800);
+          span{
+            transition: all 0.4s;
+            background-color: rgba(19, 17, 26, 0.2);
+            &:before {
+              content: none;
+            }
+          }
+        }
+        &:hover a.fugu--readmore-btn span{
+          background-color: var(--danger-500);
+        }
+    
+    }
+  }
+}
+
+// blog single
+
+.fugu--single-blog{
+  .fugu--breadcrumbs-data{
+    max-width: 100%;
+    p{
+      margin-right: 120px;
+      margin-bottom: 30px;
+      @include max(767px) {
+        margin-right: 40px;
+      }
+      @include max(479px) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+.fugu--blog-meta {
+  ul{
+    li{
+      margin-right: 20px;
+      display: inline-block;
+      a{
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+        opacity: 0.4;
+        display: flex;
+        img{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.fugu--single-thumb{
+  margin-bottom: 80px;
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}
+
+.fugu--blockquote{
+  margin: 40px 0;
+  @include max(767px) {
+    margin: 30px 0;
+  }
+  blockquote{
+    background: rgba(90, 75, 124, 0.2);
+    backdrop-filter: blur(400px);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    padding: 40px;
+    position: relative;
+    color: white;
+    padding: 40px 40px 40px 130px;
+    @include max(767px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    @include max(575px) {
+      padding: 30px;
+    }
+  }
+  &-user {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+      &-thumb{
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin-right: 20px;
+        img{
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          object-fit: cover;
+          object-position: center top;
+        }
+      }
+      &-data{
+        h4{
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 5px;
+          color: white;
+          font-family: $body-font;
+        }
+        p{
+          opacity: 0.4;
+        }
+      }
+  }
+  &-icon{
+    top: 45px;
+    left: 40px;
+    position: absolute;
+    @include max(575px) {
+      top: 0;
+      left: 0;
+      margin-bottom: 20px;
+      position: inherit;
+    }
+    img{
+      margin: 0;
+    }
+  }
+}
+
+.fugu--tags {
+  &.fugu--tags2{
+    margin-bottom: 74px;
+    @include max(767px) {
+      margin-bottom: 34px;
+    }
+    h4{
+      margin-bottom: 30px;
+      font-family: $body-font;
+    }
+  }
+}
+
+.fugu--post-navigation {
+  &-wrap{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 80px;
+    @include max(991px) {
+      margin-bottom: 40px;
+    }
+    @include max(991px) {
+      display: block;
+    }
+  }
+  flex: 0 0 50%;
+  display: flex;
+  &:hover .fugu--post-navigation-icon:before{
+    opacity: 1;
+  }
+  &-icon{
+    width: 60px;
+    height: 55px;
+    background: #26242C;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    z-index: 0;
+    position: relative;
+    img{
+      margin: 0;
+    }
+    &:before{
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      border-radius: 10px;
+      position: absolute;
+      transition: all 0.4s;
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+    }
+  }
+  &-data{
+    p{
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      margin-bottom: 15px;
+    }
+    span{
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+      @include max(1199px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  &.nav-previous{
+    padding-right: 75px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    @include max(991px) {
+      border: none;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  }
+  &.nav-next{
+    text-align: right;
+    padding-left: 20px;
+    justify-content: flex-end;
+    @include max(991px) {
+      padding: 0;
+    }
+    .fugu--post-navigation-icon{
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+  
+}
+
+.fugu--comment {
+  &-wrap{
+    margin-bottom: 80px;
+    @include max(991px) {
+      margin-bottom: 40px;
+    }
+    h3{
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-family: $body-font;
+    }
+  }
+ 
+  &-list{
+    background: rgba(90, 75, 124, 0.2);
+    backdrop-filter: blur(400px);
+    border-radius: 10px;
+    padding: 30px;
+    li{
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      &:last-child{
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+      }
+    }
+    li.children{
+      padding-left: 100px;
+      @include max(991px) {
+        padding-left: 0;
+      }
+      .fugu--comment-author {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  &-body{
+    display: flex;
+    position: relative;
+    @include max(767px) {
+      display: block;
+    }
+    a.fugu--comment-reply {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.4s;
+      &:hover{
+        color: #7d41ea;
+      }
+  }
+  }
+  &-author{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 30px;
+    flex-shrink: 0;
+    @include max(767px) {
+      margin-bottom: 20px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+  &-meta{
+    h5{
+      font-family: $body-font;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    span{
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      display: block;
+      margin-bottom: 15px;
+    }
+    p{
+    color: #FFFFFF;
+    opacity: 0.8;
+    }
+  }
+}
+
+.fugu--comment-respond-area{
+  h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: $body-font;
+  }
+  p{
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+}
+
+.fugu--comment-field{
+  margin-bottom: 24px;
+}
+
+.dark-version{
+  .fugu--blog-title{
+    h3{
+      color: #FFFFFF;
+    }
+  }
+}
+
+// blog single dark
+.dark-version .fugu--single-blog-section{
+  h3, p{
+    color: #FFFFFF;
+  }
+}

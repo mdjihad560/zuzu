@@ -1,0 +1,32 @@
+// client section
+.fugu-client-section{
+  padding: 75px 0 80px;
+  @include max(767px) {
+    padding: 60px 0;
+  }
+}
+.fugu-client-title{
+  margin-bottom: 50px;
+  text-align: center;
+  &.text-white{
+    h5{
+      color: var(--gray-10);
+    }
+  }
+  h5{
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-family: $body-font;
+    
+  }
+}
+
+.fugu-brand-logo{
+  margin: 10px 0;
+  img{
+    opacity: 0.7;
+  }
+}

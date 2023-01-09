@@ -1,0 +1,294 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="time"],
+input[type="date"],
+input[type="search"],
+input, textarea {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  color:  var(--gray-800);
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px 30px !important;
+  border: none!important;
+  transition: all 0.4s;
+  border: 1px solid var(--gray-700)!important;
+}
+input:focus, textarea:focus{
+  border: 1px solid var(--warning-500)!important;
+}
+textarea {
+  height: 150px;
+  resize: none;
+  @include max(767px) {
+    height: 100px;
+  }
+}
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    var(--gray-800);
+    opacity: 0.6;
+}
+input:-moz-placeholder, 
+textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    var(--gray-800);
+   opacity:  0.6;
+}
+input::-moz-placeholder, 
+textarea::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    var(--gray-800);
+   opacity:  0.6;
+}
+input:-ms-input-placeholder, 
+textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    var(--gray-800);
+   opacity: 0.6;
+}
+input::-ms-input-placeholder, 
+textarea::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    var(--gray-800);
+   opacity: 0.6;
+}
+
+input::placeholder, 
+textarea::placeholder{ /* Most modern browsers support this now. */
+   color:    var(--gray-800);
+   opacity: 0.6;
+}
+
+
+// all newsletter
+.fugu-newsletter {
+  max-width: 555px;
+  position: relative;
+  margin: 0 auto;
+  input{
+    padding: 15px 185px 15px 30px!important;
+    @include max(575px) {
+      padding: 15px 30px!important;
+    }
+  }
+  p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: rgba(19,17,26,.5);
+  }
+
+}
+
+#fugu-submit-btn{
+  font-weight: 700;
+  width: 175px;
+  height: 50px;
+  right: 5px;
+  top: 5px;
+  font-size: 16px;
+  transition: all 0.4s;
+  border-radius: 10px;
+  position: absolute;
+  color: var(--gray-800);
+  background-color: var(--warning-500);
+  &:hover{
+    color: var(--gray-10);
+    background-color: var(--gray-800);
+  }
+  @include max(575px) {
+    position: inherit;
+    width: 100%!important;
+    margin-top: 10px;
+    right: 0;
+    top: 0;
+}
+}
+
+
+
+
+// all newsletter
+.fugu--newsletter {
+  max-width: 430px;
+  position: relative;
+  margin: 0 auto;
+  input{
+    color: #13111A;
+    height: 55px;
+    padding: 10px 150px 10px 25px!important;
+    background-color: var(--gray-10);
+  }
+  &.fugu--search{
+    input{
+      height: 55px;
+      padding: 10px 150px 10px 50px!important;
+    }
+  }
+}
+button#fugu--search-btn {
+  position: absolute;
+  top: 11px;
+  z-index: 9;
+  left: 20px;
+  opacity: .5;
+}
+#fugu--submit-btn{
+  font-weight: 700;
+  width: 130px;
+  height: 45px;
+  color: white;
+  right: 5px;
+  top: 5px;
+  transition: all 0.4s;
+  border-radius: 10px;
+  position: absolute;
+  background-size: 200% auto!important;
+  background: linear-gradient(to right, #FF00D4 0%, #7D41EA 30.35%, #0080FF 100%);
+  &:hover{
+    background-position: right center;
+  }
+  @include max(575px) {
+    position: inherit;
+    width: 100%!important;
+    margin-top: 10px;
+    right: 0;
+    top: 0;
+}
+}
+
+.fugu--newsletter {
+  &.fugu--newsletter2{
+    max-width: 466px;
+    margin: 45px 0 0;
+    input{
+      padding: 10px 160px 10px 25px!important;
+    }
+    @include max(991px) {
+      max-width: 100%;
+    }
+    input{
+      border-radius: 3px;
+    }
+    #fugu--submit-btn{
+      border-radius: 3px;
+      right: 0;
+      top: 0;
+      height: 55px;
+      width: 150px;
+      border-radius: 0px 3px 3px 0px;
+      background: var(--gray-800);
+
+    }
+  }
+}
+.fugu--newsletter input::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    #13111A;
+    opacity: 0.5;
+}
+.fugu--newsletter input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    #13111A;
+   opacity:  0.5;
+}
+.fugu--newsletter input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    #13111A;
+   opacity:  0.5;
+}
+.fugu--newsletter input:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    #13111A;
+   opacity: 0.5;
+}
+.fugu--newsletter input::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    #13111A;
+   opacity: 0.5;
+}
+
+.fugu--newsletter input::placeholder{ /* Most modern browsers support this now. */
+   color:    #13111A;
+   opacity: 0.5;
+}
+
+#fugu--form-submit-btn{
+  width: 180px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.4s;
+  background: linear-gradient(225deg,#0080ff 0,#7d41ea 46.35%,#ff00d4 100%);
+  border-radius: 10px;
+}
+
+.fugu--footer-subscribe{
+  position: relative;
+  input{
+    font-size: 16px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid var(--gray-800)!important;
+    border-radius: 50px;
+    padding-right: 137px!important;
+    box-shadow: 0 5px 0 0 var(--gray-800);
+  }
+}
+#fugu--footer-subscribe-btn{
+  width: 130px;
+  height: 40px;
+  color: var(--gray-10);
+  border-radius: 50px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--primary-400);
+}
+
+// v8
+.fugu-newsletter-wrap2{
+  max-width: 640px;
+  margin: 0 auto;
+}
+.fugu-newsletter-field2{
+    max-width: 466px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 45px;
+    input{
+      height: 55px;
+      border-radius: 50px!important;
+      padding: 10px 160px 10px 25px!important;
+      background-color: var(--gray-10);
+      border: none!important;
+      @include max(479px) {
+        padding: 10px 25px 10px 25px!important;
+      }
+    }
+    @include max(991px) {
+      max-width: 100%;
+    }
+    input{
+      border-radius: 3px;
+    }
+    
+  }
+
+#fugu-newsletter-btn2{
+  border-radius: 50px;
+  right:5px;
+  top: 5px;
+  height: 45px;
+  width: 150px;
+  position: absolute;
+  background: var(--gray-800);
+  color: white;
+  transition: all 0.4s;
+  &:hover{
+    background-color: var(--pink-500);
+  }
+  @include max(479px) {
+    width: 100%;
+    margin-top: 20px;
+    position: static;
+  }
+
+}
