@@ -1,4 +1,4 @@
-.fugu-title {
+.zuzu-title {
 	display: flex;
 	justify-content: center;
 	color: #FFC947;
@@ -9,7 +9,7 @@
 	text-shadow: 3px 3px black;
 }
 
-.fugu-preloader {
+.zuzu-preloader {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -25,12 +25,12 @@
 	transform: translate(-50%, -50%);
 }
 
-.fugu-spinner {
+.zuzu-spinner {
 	display: flex;
 	justify-content: center;
 }
 
-.fugu-spinner svg {
+.zuzu-spinner svg {
 	width: 50%;
 	max-width: 5rem;
 	animation: rotate 3.6s linear infinite;

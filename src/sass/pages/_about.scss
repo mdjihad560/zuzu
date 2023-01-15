@@ -1,4 +1,4 @@
-.fugu-about{
+.zuzu-about{
   &-section{
     padding: 120px 0 140px;
     @include max(991px) {
@@ -7,7 +7,7 @@
     @include max(767px) {
       padding: 80px 0;
     }
-    .fugu-default-content{
+    .zuzu-default-content{
       h2{
         @include max(1199px) {
           font-size: 40px;
@@ -60,7 +60,7 @@
   }
 }
 
-.fugu-counter-rating{
+.zuzu-counter-rating{
   margin-top: 30px;
     ul{
       display: flex;
@@ -89,7 +89,7 @@
 
 // about dark
 // about section
-.fugu--about-hero-section.dark-version {
+.zuzu--about-hero-section.dark-version {
   background-size: cover;
   padding: 200px 0 120px;
   background-color: var(--gray-800);
@@ -97,14 +97,14 @@
     padding: 60px 0;
   }
 }
-.fugu--about-section2{
+.zuzu--about-section2{
   z-index: 0;
   position: relative;
   background-color: var(--gray-800);
-  .fugu--hero-content{
+  .zuzu--hero-content{
     max-width: 100%;
   }
-  .fugu--section-title {
+  .zuzu--section-title {
     max-width: 855px;
     p{
       margin-right: 0;
@@ -112,11 +112,11 @@
   }
 }
 
-.fugu--thumb-thumb2 {
+.zuzu--thumb-thumb2 {
   border-radius: 12px;
   overflow: hidden;
 }
-.fugu--shpae5 {
+.zuzu--shpae5 {
   position: absolute;
   top: -20%;
   right: 0;
@@ -132,7 +132,7 @@
 }
 
 // nexto vision section
-.fugu--vision-section{
+.zuzu--vision-section{
   padding: 5px 0;
   overflow: hidden;
   background-color: var(--gray-800);
@@ -148,30 +148,30 @@
 
 
 // video section
-.fugu--video-section2{
+.zuzu--video-section2{
   background-color: var(--gray-800);
-  .fugu--default-content.content-sm h2{
+  .zuzu--default-content.content-sm h2{
     padding: 0 30px;
     @include max(540px) {
       padding: 0;
     }
   }
-  .fugu--video-thumb{
+  .zuzu--video-thumb{
     margin: 0;
   }
 }
 
 // faq section
-.fugu--faq-section {
+.zuzu--faq-section {
   &.dark-version{
     background-color: var(--gray-800);
-    .fugu--section-title {
+    .zuzu--section-title {
         margin: 0 auto 45px;
         @include max(991px) {
           margin: 0 auto 25px;
         }
     }
-    .fugu--default-content{
+    .zuzu--default-content{
       @include max(991px) {
         margin: 0 auto;
         max-width: 600px;
@@ -182,10 +182,10 @@
 }
 
 // about light 
-.fugu--feature2-section{
+.zuzu--feature2-section{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
 }
-.fugu--feature{
+.zuzu--feature{
   &-wrap{
     padding: 0 45px;
     padding-bottom: 90px;
@@ -237,7 +237,7 @@
 }
 
 .col-xl-4.col-md-6{
-  &:nth-child(2) .fugu--feature-wrap{
+  &:nth-child(2) .zuzu--feature-wrap{
     padding-top: 90px;
     padding-bottom: 0;
     @include max(1199px) {

@@ -1,4 +1,4 @@
-.fugu-section-padding{
+.zuzu-section-padding{
   padding: 120px 0;
   @include max(991px) {
     padding: 100px 0;
@@ -8,7 +8,7 @@
   }
 }
 
-.fugu-section-padding2{
+.zuzu-section-padding2{
   padding: 110px 0 120px;
   @include max(991px) {
     padding: 90px 0 100px;
@@ -18,7 +18,7 @@
   }
 }
 
-.fugu-section-padding3{
+.zuzu-section-padding3{
   padding: 110px 0 96px;
   @include max(991px) {
     padding: 90px 0 76px;
@@ -28,17 +28,23 @@
   }
 }
 
-.fugu-section-padding4{
+.zuzu-section-padding4{
   padding: 95px 0 70px;
   @include max(767px) {
     padding: 50px 0 20px;
   }
 }
-.fugu-section-padding5{
+.zuzu-section-padding5{
   padding: 75px 0 80px;
 }
+.zuzu-section-footer{
+  padding: 100px 0;
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
 
-.fugu-section-title {
+.zuzu-section-title {
   text-align: center;
   max-width: 655px;
   margin: 0 auto 75px;
@@ -77,7 +83,7 @@
     }
   }
 }
-.fugu-section-title2{
+.zuzu-section-title2{
   margin: 0 auto 75px;
   @include max(991px) {
     margin: 0 auto 45px;
@@ -92,14 +98,14 @@
     }
   }
 }
-.fugu-section-title {
+.zuzu-section-title {
   &.title-white{
     h2{
       color: #fff;
     }
   }
 }
-.fugu-default-content {
+.zuzu-default-content {
   h5{
     margin-bottom: 24px;
     color: #F290E7;
@@ -139,7 +145,7 @@
 
 
 // section padding
-.fugu--section-padding{
+.zuzu--section-padding{
   padding: 112px 0 120px;
   @include max(991px){
     padding: 90px 0 100px;
@@ -148,7 +154,7 @@
     padding: 70px 0 80px;
   }
 }
-.fugu--section-padding2{
+.zuzu--section-padding2{
   padding: 110px 0 95px;
   @include max(991px) {
     padding: 90px 0 75px;
@@ -157,7 +163,7 @@
     padding: 70px 0 55px;
   }
 }
-.fugu--section-padding-bottom{
+.zuzu--section-padding-bottom{
   padding: 0 0 120px;
   @include max(991px){
     padding: 0 0 100px;
@@ -167,7 +173,7 @@
   }
 }
 // section title
-.fugu--section-title{
+.zuzu--section-title{
   max-width: 708px;
   text-align: center;
   margin: 0 auto 75px;
@@ -177,7 +183,7 @@
   h2{
     font-family: $another-font;
   }
-  .fugu--default-content{
+  .zuzu--default-content{
     p{
       padding: 0 20px;
       @include max(767px) {
@@ -189,7 +195,7 @@
 
 // section-title 2
 
-.fugu--section-title{
+.zuzu--section-title{
   &-wrap{
     display: flex;
     margin-bottom: 80px;
@@ -200,7 +206,7 @@
     }
     align-items: flex-end;
     justify-content: space-between;
-    .fugu--section-title{
+    .zuzu--section-title{
       text-align: left;
       margin: 0;
       max-width: 510px;
@@ -216,7 +222,7 @@
   }
 }
 
-.fugu--default-content{
+.zuzu--default-content{
   h2{
     font-family: $another-font;
     color: white;
@@ -255,7 +261,7 @@
   }
 }
 
-.fugu--section-title2 {
+.zuzu--section-title2 {
   margin-bottom: 65px;
   @include max(991px) {
     margin-bottom: 45px;
@@ -263,7 +269,7 @@
   }
 }
 
-.fugu-section-column{
+.zuzu-section-column{
   margin-bottom: 60px;
   @include max(991px) {
     margin-bottom: 50px;
@@ -282,7 +288,7 @@
   }
 }
 
-.fugu-2column-title{
+.zuzu-2column-title{
   margin-bottom: 50px;
   @include max(991px) {
     margin-bottom: 30px;

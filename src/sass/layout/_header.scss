@@ -1,5 +1,5 @@
 
-header.fugu-header-section {
+header.zuzu-header-section {
   position: fixed;
   z-index: 9;
   width: 100%;
@@ -7,7 +7,7 @@ header.fugu-header-section {
   padding: 13px 0;
   transition: all 0.4s;
 }
-header.fugu-header-section.sticky-menu, header.fugu--header-section.sticky-menu{
+header.zuzu-header-section.sticky-menu{
   padding: 10px 0;
   background-color: #fff;
   box-shadow: 0 4px 80px rgb(0 0 0 / 6%);
@@ -16,34 +16,31 @@ header.fugu-header-section.sticky-menu, header.fugu--header-section.sticky-menu{
   color: var(--gray-800);
 }
 
-
-// header three
-
-header.fugu--header-section {
-  position: fixed;
-  z-index: 9;
-  width: 100%;
-  top: 0;
-  padding: 13px 0;
-  transition: all 0.4s;
+header.zuzu-header-section.zuzu-header-dark.sticky-menu{
+  background-color: var(--gray-500);
 }
 
-.fugu-header-dark .site-menu-main .nav-link-item{
+header.zuzu-header-section.zuzu-header-dark.sticky-menu .zuzu-header-btn.black{
+  color: var(--gray-500);
+  background-color: var(--gray-10);
+}
+
+.zuzu-header-dark .site-menu-main .nav-link-item{
   color: var(--gray-10);
 }
-.fugu-header-dark.site-header .mobile-menu-trigger span {
+.zuzu-header-dark.site-header .mobile-menu-trigger span {
   background-color: white;
 }
-.fugu-header-dark.site-header .mobile-menu-trigger span:before, 
-.fugu-header-dark.site-header .mobile-menu-trigger span:after {
+.zuzu-header-dark.site-header .mobile-menu-trigger span:before, 
+.zuzu-header-dark.site-header .mobile-menu-trigger span:after {
   background-color: white;
 }
 
-.fugu-responsive-btn{
+.zuzu-responsive-btn{
   display: none;
   margin-top: 40px;
   padding: 0 15px;
-  .fugu-btn.fugu-header-btn{
+  .zuzu-btn.zuzu-header-btn{
     margin: 25px 0 0;
     padding: 0 33px;
   }
@@ -52,17 +49,21 @@ header.fugu--header-section {
   }
 }
 
-.fugu-responsive-btn{
+.zuzu-responsive-btn{
   display: none;
   margin-top: 40px;
   padding: 0 15px;
-  .fugu--btn.fugu--menu-btn1, 
-  .fugu--btn.fugu--menu-btn2, 
-  .fugu--btn.fugu--menu-btn3{
+  .zuzu--btn.zuzu--menu-btn1, 
+  .zuzu--btn.zuzu--menu-btn2, 
+  .zuzu--btn.zuzu--menu-btn3{
     margin: 25px 0 0;
     padding: 0 33px;
   }
   @include max(991px) {
     display: block;
   }
+}
+
+.brand-logo.zuzu-menu-left {
+  margin-right: 50px;
 }

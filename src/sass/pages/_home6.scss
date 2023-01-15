@@ -1,9 +1,9 @@
 // text slider
 
-.fugu--text-slider-section3{
+.zuzu--text-slider-section3{
   background-color: #F290E7;
   padding: 15px 0;
-  .fugu--text-slider-data{
+  .zuzu--text-slider-data{
     h3{
       font-size: 30px;
       color: var(--gray-800);
@@ -13,8 +13,8 @@
 }
 
 // card slider
-.fugu-card-slider .fugu--arrow, 
-.fugu-card-slider .prev-arrow {
+.zuzu-card-slider .zuzu--arrow, 
+.zuzu-card-slider .prev-arrow {
   left: -15px;
   top: 50%;
   z-index: 9;
@@ -38,7 +38,7 @@
   }
 }
 
-.fugu-card-slider .fugu--arrow {
+.zuzu-card-slider .zuzu--arrow {
   left: auto;
   right: -15px;
   background-image: url(../images/svg/next.svg);
@@ -47,16 +47,16 @@
   }
 }
 
-.fugu-card-slider .fugu--arrow:hover, 
-.fugu-card-slider .prev-arrow:hover{
+.zuzu-card-slider .zuzu--arrow:hover, 
+.zuzu-card-slider .prev-arrow:hover{
   box-shadow: 0 0 0 0 var(--gray-800);
 } 
-.fugu-card-slider-item{
+.zuzu-card-slider-item{
   @include max(991px) {
     margin-bottom: 40px;
   }
 }
-.fugu-card-slider .slick-slide img{
+.zuzu-card-slider .slick-slide img{
   margin: 0 auto;
   height: 525px;
   @include max(1199px) {

@@ -1,10 +1,10 @@
-.fugu-cta-section{
+.zuzu-cta-section{
   padding: 95px 0;
   background-color: var(--warning-400);
   @include max(767px) {
     padding: 80px 0;
   }
-  .fugu-default-content {
+  .zuzu-default-content {
     &.large-content{
       @include max(991px) {
         text-align: center;
@@ -15,7 +15,7 @@
     }
   }
 }
-.fugu-cta-app-btn-wrap {
+.zuzu-cta-app-btn-wrap {
   width: 100%;
   text-align: right;
   @include max(991px) {
@@ -24,14 +24,14 @@
 }
 
 
-.fugu--cta-section {
+.zuzu--cta-section {
   z-index: 0;
   background-size: cover;
   position: relative;
   background-color: var(--gray-800);
 }
 
-.fugu--cta-wrap{
+.zuzu--cta-wrap{
   border-radius: 10px;
   padding: 80px 110px;
   background-color: var(--primary-500);
@@ -50,7 +50,7 @@
 }
 
 // cta v6
-.fugu-cta2-wrap{
+.zuzu-cta2-wrap{
   border-radius: 20px;
   padding: 80px;
   background-color: var(--primary-400);
@@ -62,7 +62,7 @@
   }
 }
 
-.fugu-cta-footer{
+.zuzu-cta-footer{
   margin-top: 50px;
   @include max(767px) {
     margin-top: 30px;

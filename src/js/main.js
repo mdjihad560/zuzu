@@ -4,22 +4,22 @@
   /*------------------------------------------------------------------
   [Table of contents]
 
-fugu STICKY MENU JS INIT
-fugu COUNTER JS INIT
-fugu TEXT SLIDER
-fugu TEXT SLIDER 2
-fugu CLIENT SLIDER
-fugu CLIENT SLIDER 2
-fugu TESTIMONIAL SLIDER
-fugu TESTIMONIAL SLIDER 2
-fugu PRICING TABLE JS INIT
-fugu SCROLL EFFECT TWO JS INIT 01
-fugu SCROLL EFFECT TWO JS INIT 02
-fugu MAGNIFIC POPUP JS INIT
-fugu GALLERY MASONAY FILTER JS 01
-fugu GALLERY MASONAY FILTER JS 02
-fugu GALLERY MASONAY FILTER JS 03
-fugu MAP JS
+zuzu STICKY MENU JS INIT
+zuzu COUNTER JS INIT
+zuzu TEXT SLIDER
+zuzu TEXT SLIDER 2
+zuzu CLIENT SLIDER
+zuzu CLIENT SLIDER 2
+zuzu TESTIMONIAL SLIDER
+zuzu TESTIMONIAL SLIDER 2
+zuzu PRICING TABLE JS INIT
+zuzu SCROLL EFFECT TWO JS INIT 01
+zuzu SCROLL EFFECT TWO JS INIT 02
+zuzu MAGNIFIC POPUP JS INIT
+zuzu GALLERY MASONAY FILTER JS 01
+zuzu GALLERY MASONAY FILTER JS 02
+zuzu GALLERY MASONAY FILTER JS 03
+zuzu MAP JS
   
   -------------------------------------------------------------------*/
   
@@ -38,29 +38,29 @@ fugu MAP JS
 
 
 /*--------------------------------------------------------------
-fugu PRELOADER JS INIT
+zuzu PRELOADER JS INIT
 --------------------------------------------------------------*/
 
-  $(".fugu-preloader").fadeOut(500);
+  $(".zuzu-preloader").fadeOut(500);
 
 /*--------------------------------------------------------------
-fugu SCROLL TOP JS INIT
+zuzu SCROLL TOP JS INIT
 --------------------------------------------------------------*/
       //Scroll event
   $(window).scroll(function(){
     var scrolled = $(window).scrollTop();
-    if (scrolled > 200) $('.fugu-go-top').fadeIn('slow');
-    if (scrolled < 200) $('.fugu-go-top').fadeOut('slow');
+    if (scrolled > 200) $('.zuzu-go-top').fadeIn('slow');
+    if (scrolled < 200) $('.zuzu-go-top').fadeOut('slow');
   });
   
   //Click event
-  $('.fugu-go-top').click(function () {
+  $('.zuzu-go-top').click(function () {
     $("html, body").animate({ scrollTop: "0" },  500);
   });
 
     
 /*--------------------------------------------------------------
-fugu STICKY MENU JS INIT
+zuzu STICKY MENU JS INIT
 --------------------------------------------------------------*/
 $(window).on('scroll', function(){
   if ($(window).scrollTop() > 50) {
@@ -72,16 +72,16 @@ $(window).on('scroll', function(){
 });
 
 /*--------------------------------------------------------------
-fugu COUNTER JS INIT
+zuzu COUNTER JS INIT
 --------------------------------------------------------------*/
-var fugu_counter = $('#fugu-counter');
-  if(fugu_counter.is_exist()){
+var zuzu_counter = $('#zuzu-counter');
+  if(zuzu_counter.is_exist()){
       var a = 0;
       $(window).scroll(function() {
 
-        var oTop = $(fugu_counter).offset().top - window.innerHeight;
+        var oTop = $(zuzu_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.fugu-counter').each(function() {
+          $('.zuzu-counter').each(function() {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -108,11 +108,11 @@ var fugu_counter = $('#fugu-counter');
 
 
 /*--------------------------------------------------------------
-fugu TEXT SLIDER
+zuzu TEXT SLIDER
 --------------------------------------------------------------*/
-  var fugu_text_slider = $('.fugu-text-slider1');
-  if(fugu_text_slider.is_exist()){
-    fugu_text_slider.slick({
+  var zuzu_text_slider = $('.zuzu-text-slider1');
+  if(zuzu_text_slider.is_exist()){
+    zuzu_text_slider.slick({
     infinite: true,
     slidesToShow: 2, 
     slidesToScroll: 1,
@@ -139,11 +139,11 @@ fugu TEXT SLIDER
 }
 
 /*--------------------------------------------------------------
-fugu TEXT SLIDER 2
+zuzu TEXT SLIDER 2
 --------------------------------------------------------------*/
-var fugu_text_slider2 = $('.fugu-text-slider2');
-if(fugu_text_slider2.is_exist()){
-  fugu_text_slider2.slick({
+var zuzu_text_slider2 = $('.zuzu-text-slider2');
+if(zuzu_text_slider2.is_exist()){
+  zuzu_text_slider2.slick({
   rtl: true,
   infinite: true,
   slidesToShow: 2, 
@@ -171,11 +171,11 @@ if(fugu_text_slider2.is_exist()){
 }
 
 /*--------------------------------------------------------------
-fugu CLIENT SLIDER
+zuzu CLIENT SLIDER
 --------------------------------------------------------------*/
-var fugu_client_slider = $('.fugu-client-slider');
-if(fugu_client_slider.is_exist()){
-  fugu_client_slider.slick({
+var zuzu_client_slider = $('.zuzu-client-slider');
+if(zuzu_client_slider.is_exist()){
+  zuzu_client_slider.slick({
   infinite: true,
   slidesToShow: 5, 
   slidesToScroll: 1,
@@ -214,11 +214,11 @@ if(fugu_client_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-fugu CLIENT SLIDER 2
+zuzu CLIENT SLIDER 2
 --------------------------------------------------------------*/
-var fugu_client_slider2 = $('.fugu-client-slider2');
-if(fugu_client_slider2.is_exist()){
-  fugu_client_slider2.slick({
+var zuzu_client_slider2 = $('.zuzu-client-slider2');
+if(zuzu_client_slider2.is_exist()){
+  zuzu_client_slider2.slick({
   rows: 2,
   infinite: true,
   slidesToShow: 5, 
@@ -258,11 +258,11 @@ if(fugu_client_slider2.is_exist()){
 
 
 /*--------------------------------------------------------------
-fugu TESTIMONIAL SLIDER
+zuzu TESTIMONIAL SLIDER
 --------------------------------------------------------------*/
-var fugu_testimonial_slider = $('.fugu-testimonial-slider');
-if(fugu_testimonial_slider.is_exist()){
-  fugu_testimonial_slider.slick({
+var zuzu_testimonial_slider = $('.zuzu-testimonial-slider');
+if(zuzu_testimonial_slider.is_exist()){
+  zuzu_testimonial_slider.slick({
     infinite: true,
     slidesToShow: 3, 
     slidesToScroll: 1,
@@ -290,11 +290,11 @@ if(fugu_testimonial_slider.is_exist()){
 }
 
 /*--------------------------------------------------------------
-fugu TESTIMONIAL SLIDER 2
+zuzu TESTIMONIAL SLIDER 2
 --------------------------------------------------------------*/
-var fugu_testimonial_slider2 = $('.fugu-testimonial-slider2');
-if(fugu_testimonial_slider2.is_exist()){
-  fugu_testimonial_slider2.slick({
+var zuzu_testimonial_slider2 = $('.zuzu-testimonial-slider2');
+if(zuzu_testimonial_slider2.is_exist()){
+  zuzu_testimonial_slider2.slick({
     infinite: true,
     slidesToShow: 2, 
     slidesToScroll: 1,
@@ -316,7 +316,7 @@ if(fugu_testimonial_slider2.is_exist()){
 }
 
 /*--------------------------------------------------------------
-fugu PRICING TABLE JS INIT
+zuzu PRICING TABLE JS INIT
 ------------------------------------------------------------*/
     // Table BTN Trigger
     $("#l5-pricing-btn .toggle-btn").on("click", function (e) {
@@ -350,7 +350,7 @@ fugu PRICING TABLE JS INIT
 
 
 /*--------------------------------------------------------------
-fugu SCROLL EFFECT TWO JS INIT 01
+zuzu SCROLL EFFECT TWO JS INIT 01
 ------------------------------------------------------------*/
 var $rotateTwo = $('#rotatetwo');
 var $win = $(window);
@@ -360,7 +360,7 @@ $win.on('scroll', function () {
 });
 
 /*--------------------------------------------------------------
-fugu SCROLL EFFECT TWO JS INIT 02
+zuzu SCROLL EFFECT TWO JS INIT 02
 ------------------------------------------------------------*/
 var $rotateThree = $('#rotatethree');
 var $win = $(window);
@@ -370,9 +370,9 @@ $win.on('scroll', function () {
 });
 
 /*--------------------------------------------------------------
-fugu MAGNIFIC POPUP JS INIT
+zuzu MAGNIFIC POPUP JS INIT
 ------------------------------------------------------------*/
-var popup_youtube = $('.fugu-popup');
+var popup_youtube = $('.zuzu-popup');
   if (popup_youtube.is_exist()){
       popup_youtube.magnificPopup({
       type: 'iframe',
@@ -386,13 +386,13 @@ var popup_youtube = $('.fugu-popup');
 /*--------------------------------------------------------------
 COUNTER JS INIT
 --------------------------------------------------------------*/
-var nexto_counter = $('#fugu--counter');
+var nexto_counter = $('#zuzu--counter');
   if(nexto_counter.is_exist()){
       var a = 0;
 
       var oTop = $(nexto_counter).offset().top - window.innerHeight;
       if (a == 0 && $(window).scrollTop() > oTop) {
-        $('.fugu--counter').each(function() {
+        $('.zuzu--counter').each(function() {
           var $this = $(this),
             countTo = $this.attr('data-percentage');
           $({
@@ -419,14 +419,14 @@ var nexto_counter = $('#fugu--counter');
 /*--------------------------------------------------------------
 COUNTER TWO JS INIT
 --------------------------------------------------------------*/
-var nexto_counter = $('#fugu--counter2');
+var nexto_counter = $('#zuzu--counter2');
   if(nexto_counter.is_exist()){
       var a = 0;
       $(window).scroll(function() {
 
         var oTop = $(nexto_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.fugu--counter').each(function() {
+          $('.zuzu--counter').each(function() {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -455,7 +455,7 @@ var nexto_counter = $('#fugu--counter2');
 /*--------------------------------------------------------------
 NEXTO SLIDER ONE
 --------------------------------------------------------------*/
-var nexto_slider_one = $('.fugu--slider-one');
+var nexto_slider_one = $('.zuzu--slider-one');
   if(nexto_slider_one.is_exist()){
     nexto_slider_one.slick({
       infinite: true,
@@ -466,7 +466,7 @@ var nexto_slider_one = $('.fugu--slider-one');
       autoplay: true,
 	    autoplaySpeed: 2000,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-			nextArrow: '<button class="slide-arrow fugu--arrow"></button>',
+			nextArrow: '<button class="slide-arrow zuzu--arrow"></button>',
       responsive: [
         {
           breakpoint: 1400,
@@ -498,7 +498,7 @@ var nexto_slider_one = $('.fugu--slider-one');
 /*--------------------------------------------------------------
 NEXTO SLIDER TWO
 --------------------------------------------------------------*/
-var nexto_slider_two = $('.fugu--slider-two');
+var nexto_slider_two = $('.zuzu--slider-two');
 if( nexto_slider_two.is_exist()){
     nexto_slider_two.slick({
     infinite: true,
@@ -545,7 +545,7 @@ if( nexto_slider_two.is_exist()){
 /*--------------------------------------------------------------
 NEXTO TEXT SLIDER
 --------------------------------------------------------------*/
-var nexto_text_slider = $('.fugu--text-slider');
+var nexto_text_slider = $('.zuzu--text-slider');
 if(nexto_text_slider.is_exist()){
   nexto_text_slider.slick({
   infinite: true,
@@ -586,9 +586,9 @@ $win.on('scroll', function () {
 /*--------------------------------------------------------------
 NEXTO SWIPER SLIDER JS INIT
 ------------------------------------------------------------*/
-var swiper_slider = $('.fugu--swiper-slider');
+var swiper_slider = $('.zuzu--swiper-slider');
 if (swiper_slider.is_exist()){
-  swiper_slider = new Swiper(".fugu--swiper-slider", {
+  swiper_slider = new Swiper(".zuzu--swiper-slider", {
   loop: true,
   effect: "cards",
   grabCursor: true,
@@ -599,7 +599,7 @@ if (swiper_slider.is_exist()){
 /*--------------------------------------------------------------
 CARD LIKE JS INIT
 ------------------------------------------------------------*/
-const nextoBtnTigger = document.querySelectorAll('.fugu--tigger');
+const nextoBtnTigger = document.querySelectorAll('.zuzu--tigger');
   nextoBtnTigger.forEach(linkbtn => {
     linkbtn.addEventListener('click', () => {
       linkbtn.classList.toggle("dark-btn");
@@ -608,9 +608,9 @@ const nextoBtnTigger = document.querySelectorAll('.fugu--tigger');
 
 
 /*--------------------------------------------------------------
-fugu MAGNIFIC POPUP JS INIT
+zuzu MAGNIFIC POPUP JS INIT  new add
 ------------------------------------------------------------*/
-var popup_youtube = $('.fugu--popup');
+var popup_youtube = $('.zuzu-popup');
 if (popup_youtube.is_exist()){
     popup_youtube.magnificPopup({
     type: 'iframe',
@@ -621,11 +621,11 @@ if (popup_youtube.is_exist()){
 
 
 /*--------------------------------------------------------------
-FUGU CARD SLIDER V6
+zuzu CARD SLIDER V6
 --------------------------------------------------------------*/
-var fugu_card_slider = $('.fugu-card-slider');
-  if(fugu_card_slider.is_exist()){
-    fugu_card_slider.slick({
+var zuzu_card_slider = $('.zuzu-card-slider');
+  if(zuzu_card_slider.is_exist()){
+    zuzu_card_slider.slick({
       infinite: true,
       slidesToShow: 1, 
       slidesToScroll: 1,
@@ -633,13 +633,13 @@ var fugu_card_slider = $('.fugu-card-slider');
       autoplay: true,
 	    autoplaySpeed: 2000,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-			nextArrow: '<button class="slide-arrow fugu--arrow"></button>',
+			nextArrow: '<button class="slide-arrow zuzu--arrow"></button>',
     });
   }
 /*--------------------------------------------------------------
-FUGU THUMB MOVE JS INIT_EVENT
+zuzu THUMB MOVE JS INIT_EVENT
 --------------------------------------------------------------*/
-  const image = document.querySelector(".fugu-tilt");
+  const image = document.querySelector(".zuzu-tilt");
 
 image.addEventListener("mousemove", event => {
   const { top, bottom, left, right } = event.target.getBoundingClientRect();
@@ -671,11 +671,11 @@ image.addEventListener("mousemove", event => {
   
   $(window).on("load" ,function(){
  /*--------------------------------------------------------------
-fugu GALLERY MASONAY FILTER JS 01
+zuzu GALLERY MASONAY FILTER JS 01
 ------------------------------------------------------------*/
-var fugu_gallery_masonay1 = $('#fugu-gallery-masonay1');
-if(fugu_gallery_masonay1.is_exist()){
-  var $container = $(fugu_gallery_masonay1),
+var zuzu_gallery_masonay1 = $('#zuzu-gallery-masonay1');
+if(zuzu_gallery_masonay1.is_exist()){
+  var $container = $(zuzu_gallery_masonay1),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -692,10 +692,10 @@ if(fugu_gallery_masonay1.is_exist()){
         columnNum  = 1;
       }
       columnWidth = Math.floor(w/columnNum);
-      $container.find('.fugu-grid-item').each(function() {
+      $container.find('.zuzu-grid-item').each(function() {
         var $item = $(this),
-          multiplier_w = $item.attr('class').match(/fugu-grid-item-w(\d)/),
-          multiplier_h = $item.attr('class').match(/fugu-grid-item-h(\d)/),
+          multiplier_w = $item.attr('class').match(/zuzu-grid-item-w(\d)/),
+          multiplier_h = $item.attr('class').match(/zuzu-grid-item-h(\d)/),
           width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
           height = multiplier_h ? columnWidth*multiplier_h[1]*0.4-12 : columnWidth*0.5;
         $item.css({
@@ -708,7 +708,7 @@ if(fugu_gallery_masonay1.is_exist()){
     isotope = function () {
       $container.isotope({
         resizable: false,
-        itemSelector: '.fugu-grid-item',
+        itemSelector: '.zuzu-grid-item',
         masonry: {
           columnWidth: colWidth(),
           gutterWidth: 0
@@ -717,7 +717,7 @@ if(fugu_gallery_masonay1.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.fugu-gallery-menu .option-set'),
+  var $optionSets = $('.zuzu-gallery-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -745,11 +745,11 @@ if(fugu_gallery_masonay1.is_exist()){
 
 
 /*--------------------------------------------------------------
-fugu GALLERY MASONAY FILTER JS 02
+zuzu GALLERY MASONAY FILTER JS 02
 ------------------------------------------------------------*/
-var fugu_gallery_masonay2 = $('#fugu-gallery-masonay2');
-if(fugu_gallery_masonay2.is_exist()){
-  var $container = $(fugu_gallery_masonay2),
+var zuzu_gallery_masonay2 = $('#zuzu-gallery-masonay2');
+if(zuzu_gallery_masonay2.is_exist()){
+  var $container = $(zuzu_gallery_masonay2),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -766,10 +766,10 @@ if(fugu_gallery_masonay2.is_exist()){
         columnNum  = 1;
       }
       columnWidth = Math.floor(w/columnNum);
-      $container.find('.fugu-grid-item').each(function() {
+      $container.find('.zuzu-grid-item').each(function() {
         var $item = $(this),
-          multiplier_w = $item.attr('class').match(/fugu-grid-item-w(\d)/),
-          multiplier_h = $item.attr('class').match(/fugu-grid-item-h(\d)/),
+          multiplier_w = $item.attr('class').match(/zuzu-grid-item-w(\d)/),
+          multiplier_h = $item.attr('class').match(/zuzu-grid-item-h(\d)/),
           width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
           height = multiplier_h ? columnWidth*multiplier_h[1]*0.4-12 : columnWidth*0.5;
         $item.css({
@@ -782,7 +782,7 @@ if(fugu_gallery_masonay2.is_exist()){
     isotope = function () {
       $container.isotope({
         resizable: false,
-        itemSelector: '.fugu-grid-item',
+        itemSelector: '.zuzu-grid-item',
         masonry: {
           columnWidth: colWidth(),
           gutterWidth: 0
@@ -791,7 +791,7 @@ if(fugu_gallery_masonay2.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.fugu-gallery-menu .option-set'),
+  var $optionSets = $('.zuzu-gallery-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -819,11 +819,11 @@ if(fugu_gallery_masonay2.is_exist()){
 
 
 /*--------------------------------------------------------------
-fugu GALLERY MASONAY FILTER JS 03
+zuzu GALLERY MASONAY FILTER JS 03
 ------------------------------------------------------------*/
-var fugu_gallery_masonay3 = $('#fugu-gallery-masonay3');
-if(fugu_gallery_masonay3.is_exist()){
-  var $container = $(fugu_gallery_masonay3),
+var zuzu_gallery_masonay3 = $('#zuzu-gallery-masonay3');
+if(zuzu_gallery_masonay3.is_exist()){
+  var $container = $(zuzu_gallery_masonay3),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -840,10 +840,10 @@ if(fugu_gallery_masonay3.is_exist()){
         columnNum  = 1;
       }
       columnWidth = Math.floor(w/columnNum);
-      $container.find('.fugu-grid-item').each(function() {
+      $container.find('.zuzu-grid-item').each(function() {
         var $item = $(this),
-          multiplier_w = $item.attr('class').match(/fugu-grid-item-w(\d)/),
-          multiplier_h = $item.attr('class').match(/fugu-grid-item-h(\d)/),
+          multiplier_w = $item.attr('class').match(/zuzu-grid-item-w(\d)/),
+          multiplier_h = $item.attr('class').match(/zuzu-grid-item-h(\d)/),
           width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
           height = multiplier_h ? columnWidth*multiplier_h[1]*0.4-12 : columnWidth*0.5;
         $item.css({
@@ -856,7 +856,7 @@ if(fugu_gallery_masonay3.is_exist()){
     isotope = function () {
       $container.isotope({
         resizable: false,
-        itemSelector: '.fugu-grid-item',
+        itemSelector: '.zuzu-grid-item',
         masonry: {
           columnWidth: colWidth(),
           gutterWidth: 0
@@ -865,7 +865,7 @@ if(fugu_gallery_masonay3.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.fugu-gallery-menu .option-set'),
+  var $optionSets = $('.zuzu-gallery-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -892,12 +892,12 @@ if(fugu_gallery_masonay3.is_exist()){
 }
 
 
-// fugu old 
+// zuzu old 
 
   /*--------------------------------------------------------------
   FOUR COLUMN FILTER JS INIT
   ------------------------------------------------------------*/
-  var nexto_filter = $('#fugu--four-column');
+  var nexto_filter = $('#zuzu--four-column');
   if(nexto_filter.is_exist()){
     var $container = $(nexto_filter),
       colWidth = function () {
@@ -941,7 +941,7 @@ if(fugu_gallery_masonay3.is_exist()){
       };
     isotope();
     $(window).resize(isotope);
-    var $optionSets = $('.fugu--portfolio-menu .option-set'),
+    var $optionSets = $('.zuzu--portfolio-menu .option-set'),
         $optionLinks = $optionSets.find('li');
     $optionLinks.click(function(){
     var $this = $(this);
@@ -970,7 +970,7 @@ if(fugu_gallery_masonay3.is_exist()){
     /*--------------------------------------------------------------
   TWO COLUMN FILTER JS INIT
   ------------------------------------------------------------*/
-  var nexto_filter = $('#fugu--two-column');
+  var nexto_filter = $('#zuzu--two-column');
   if(nexto_filter.is_exist()){
     var $container = $(nexto_filter),
       colWidth = function () {
@@ -1014,7 +1014,7 @@ if(fugu_gallery_masonay3.is_exist()){
       };
     isotope();
     $(window).resize(isotope);
-    var $optionSets = $('.fugu--portfolio-menu .option-set'),
+    var $optionSets = $('.zuzu--portfolio-menu .option-set'),
         $optionLinks = $optionSets.find('li');
     $optionLinks.click(function(){
     var $this = $(this);
@@ -1046,7 +1046,7 @@ if(fugu_gallery_masonay3.is_exist()){
   }); // End window LODE
 
 /*--------------------------------------------------------------
-fugu MAP JS
+zuzu MAP JS
 ------------------------------------------------------------*/
 var google_map = $('#map');
 if(google_map.is_exist()){
@@ -1071,11 +1071,11 @@ if(google_map.is_exist()){
         position: new google.maps.LatLng(40.6700, -73.9400),
         map: map,
         icon: 'assets/images/all-img/contact/map.png',
-        title: 'fugu'
+        title: 'zuzu'
       });
       var contentString = '<div id="content">' +
           '<div id="tpw">' +
-          '<h3>fugu' +
+          '<h3>zuzu' +
           '</div>';
 
       var infowindow = new google.maps.InfoWindow({

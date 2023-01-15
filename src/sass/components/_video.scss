@@ -1,5 +1,11 @@
+// video v1 hero section
 
-.fugu-video-thumb{
+
+
+
+
+
+.zuzu-video-thumb{
   position: relative;
   img{
     width: 100%;
@@ -9,15 +15,15 @@
     margin-bottom: 30px;
   }
 }
-a.fugu-popup, 
-.fugu-play-btn {
+a.zuzu-popup, 
+.zuzu-play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-a.fugu-popup img{
+a.zuzu-popup img{
   -webkit-animation: rotate-animation 10s infinite linear;
   -moz-animation: rotate-animation 10s infinite linear;
   -o-animation: rotate-animation 10s infinite linear;
@@ -35,7 +41,7 @@ a.fugu-popup img{
     width: 75px;
   }
 }
-.fugu-play-btn img{
+.zuzu-play-btn img{
   animation: none!important;
   width: auto!important;
 }
@@ -59,7 +65,7 @@ a.fugu-popup img{
 }
 
 // video 2
-.fugu-video-thumb2{
+.zuzu-video-thumb2{
   border-radius: 10px;
   overflow: hidden;
   margin: 0;
@@ -77,21 +83,21 @@ a.fugu-popup img{
   }
 }
 
-.fugu-video-thumb3{
+.zuzu-video-thumb3{
   margin: 0;
 }
 
 
 
 
-.fugu--video-section {
+.zuzu--video-section {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: var(--gray-800);
-  .fugu--btn-wrap {
+  .zuzu--btn-wrap {
       margin: 45px 0 0;
   }
-  .fugu--default-content {
+  .zuzu--default-content {
     padding-left: 30px;
     position: relative;
     z-index: 1;
@@ -101,7 +107,7 @@ a.fugu-popup img{
 }
 }
 
-.fugu--video-thumb{
+.zuzu--video-thumb{
   z-index: 0;
   position: relative;
   margin-right: 50px;
@@ -169,10 +175,10 @@ a.fugu-popup img{
 // video section about pages
 
 
-.fugu--video {
+.zuzu--video {
   &-wrap{
     position: relative;
-      .fugu--popup {
+      .zuzu--popup {
         position: absolute;
         top: 48%;
         left: 58%;
@@ -209,7 +215,7 @@ a.fugu-popup img{
   }
   &-column{
     display: flex;
-    .fugu--video-thumb{
+    .zuzu--video-thumb{
       margin-right: 30px;
       position: relative;
       @include max(1199px) {
@@ -230,7 +236,7 @@ a.fugu-popup img{
   }
   
 }
-.fugu--play-btn {
+.zuzu--play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,7 +263,7 @@ a.fugu-popup img{
 
 // video v6
 
-.fugu-video-thumb4{
+.zuzu-video-thumb4{
   border-radius: 20px;
   overflow: hidden;
   margin-right: 100px;
@@ -271,7 +277,7 @@ a.fugu-popup img{
   }
 }
 
-.fugu--popup {
+.zuzu--popup {
   position: absolute;
   left: 50%;
   top: 50%;

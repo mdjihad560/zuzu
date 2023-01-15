@@ -1,5 +1,5 @@
 // client section
-.fugu--client-section{
+.zuzu--client-section{
   padding: 0 0 120px;
   @include max(1199px) {
     padding: 0 0 100px;
@@ -9,7 +9,7 @@
   }
   background-color: var(--gray-800);
 }
-.fugu--client-title{
+.zuzu--client-title{
   margin-bottom: 60px;
   text-align: center;
   p{
@@ -20,12 +20,12 @@
   }
 }
 
-// fugu--feature-section
-.fugu--feature-section{
+// zuzu--feature-section
+.zuzu--feature-section{
   background-color: var(--gray-800);
 }
 // content section
-.fugu--content-section {
+.zuzu--content-section {
   z-index: 0;
   position: relative;
   background-position: center center;
@@ -33,7 +33,7 @@
   background-color: var(--gray-800);
   
 }
-.fugu--content-top{
+.zuzu--content-top{
   padding: 0 0 120px;
   @include max(991px) {
     padding: 0 0 100px;
@@ -41,7 +41,7 @@
   @include max(767px) {
     padding: 0 0 80px;
   }
-  .fugu--default-content {
+  .zuzu--default-content {
     margin-right: 51px;
     @include max(991px) {
       max-width: 550px;
@@ -50,7 +50,7 @@
       margin-right: 0;
     }
   }
-  .fugu--content-thumb{
+  .zuzu--content-thumb{
     z-index: 0;
     text-align: right;
     position: relative;
@@ -61,8 +61,8 @@
     }
   }
 }
-.fugu--content-bottom {
-  .fugu--content-thumb{
+.zuzu--content-bottom {
+  .zuzu--content-thumb{
     z-index: 0;
     position: relative;
     @include max(1199px) {
@@ -70,7 +70,7 @@
       margin: 0 auto;
       margin-bottom: 50px;
     }
-    .fugu--bitcoin {
+    .zuzu--bitcoin {
       position: absolute;
       bottom: 10px;
       right: -90px;
@@ -85,7 +85,7 @@
       }
     }
   }
-  .fugu--default-content {
+  .zuzu--default-content {
     padding: 0 20px;
     
     @include max(1199px) {
@@ -97,7 +97,7 @@
 }
 }
 
-.fugu--meta{
+.zuzu--meta{
   margin-top: 35px;
   ul{
     li{
@@ -121,11 +121,11 @@
 }
 
 // testimonial section
-.fugu--testimonial-section{
+.zuzu--testimonial-section{
   background-color: var(--gray-800);
 }
 
 // faq section
-.fugu--faq-section2.fugu--section-padding {
+.zuzu--faq-section2.zuzu--section-padding {
   background-size: cover;
 }

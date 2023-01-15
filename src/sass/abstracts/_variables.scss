@@ -3,6 +3,7 @@ $heading-font: 'Public Sans', sans-serif !default;
 $body-font: 'Inter', sans-serif !default;
 $another-font: 'Space Grotesk', sans-serif !default;
 $another-font2: 'Syne', sans-serif !default;
+$another-font3: 'Cabin', sans-serif !default;
 
 
 // color variable
@@ -42,6 +43,7 @@ $colors: (
     500: #FF6B55,
   ),
   pink: (
+    600: #FF00D5,
     500: #FF3C82,
   ),
 );
@@ -73,7 +75,7 @@ $bodyfontScale: (
 $button_font_size: 16px;
 $buton_line_height: 24px;
 $buton_border_radius: 3px;
-$button_padding: 20px 55px;
+$button_padding: 15px 36px;
 $button_font_weight: 700;
 $button_font_family: $body-font;
 

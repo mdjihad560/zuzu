@@ -1,11 +1,11 @@
-.fugu-testimonial-section{
+.zuzu-testimonial-section{
   background-color: var(--warning-400);
-  .fugu-section-title{
+  .zuzu-section-title{
     max-width: 720px;
   }
 }
 
-.fugu-testimonial{
+.zuzu-testimonial{
   &-card{
     padding: 30px;
     border-radius: 3px;
@@ -60,7 +60,7 @@
  
 }
 
-.fugu-testimonial-slider .fugu-testimonial-card{
+.zuzu-testimonial-slider .zuzu-testimonial-card{
   margin: 0 12px;
   padding: 29px;
   @include max(767px) {
@@ -69,7 +69,7 @@
 }
 
 // testimonial 2
-.fugu-testimonial{
+.zuzu-testimonial{
   &-card2{
     padding: 40px;
     border-radius: 10px;
@@ -88,10 +88,10 @@
   }
 }
 
-.fugu-testimonial-slider2 {
+.zuzu-testimonial-slider2 {
   max-width: 1150px;
   margin: 0 auto;
-  .fugu-testimonial-card2{
+  .zuzu-testimonial-card2{
     margin: 0 32px;
     @include max(1399px) {
       margin: 0 20px;
@@ -102,13 +102,13 @@
   }
   
 }
-.fugu-testimonial-btn{
+.zuzu-testimonial-btn{
   margin-top: 80px;
   text-align: center;
   @include max(1199px) {
     margin-top: 50px;
   }
-  .fugu-btn.fugu-header-btn{
+  .zuzu-btn.zuzu-header-btn{
     margin-left: 0;
   }
 }
@@ -116,7 +116,7 @@
 
 
 // testimonial page
-.fugu-testimonial{
+.zuzu-testimonial{
   &-card3{
     padding: 40px;
     margin-bottom: 24px;
@@ -134,7 +134,7 @@
     p{
       color: var(--gray-800);
     }
-    .fugu-testimonial-author-wrap{
+    .zuzu-testimonial-author-wrap{
       margin: 0;
     }
   }
@@ -151,7 +151,7 @@
 
 
 
-.fugu--testimonial{
+.zuzu--testimonial{
   &-wrap{
     padding: 40px;
     border-radius: 3px;
@@ -212,7 +212,7 @@
   }
 }
 
-.fugu--testimonial-button {
+.zuzu--testimonial-button {
   margin-top: 56px;
   text-align: center;
   @include max(991px) {
@@ -221,7 +221,7 @@
 }
 
 // testimonial v7
-.fugu-testimonial-content-v7{
+.zuzu-testimonial-content-v7{
   p{
     font-weight: 600;
     color: var(--gray-10);
@@ -238,7 +238,7 @@
     font-size: 14px;
   }
 }
-.fugu-testimonial-buttonv7{
+.zuzu-testimonial-buttonv7{
   margin-top: 75px;
   text-align: center;
   @include max(991px) {
@@ -246,10 +246,10 @@
   }
 }
 
-.fugu-map-thumb{
+.zuzu-map-thumb{
   position: relative;
 }
-.fugu-t-user{
+.zuzu-t-user{
   position: absolute;
   border-radius: 100%;
   overflow: hidden;

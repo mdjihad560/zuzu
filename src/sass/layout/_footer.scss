@@ -1,27 +1,26 @@
-
-footer.fugu-footer-section{
-  background-color: var(--gray-800);
-  padding: 100px 0 95px;
+.zuzu-footer-top{
+  padding: 110px 0 60px;
   @include max(991px){
-    padding: 80px 0;
+    padding: 100px 0 60px;
   }
   @include max(767px){
-    padding: 60px 0;
+    padding: 80px 0 20px;
   }
+  
 }
-.fugu-textarea{
-  @include max(991px){
-    margin-bottom: 50px;
+.zuzu-textarea{
+  @include max(1199px){
+    margin-bottom: 40px;
     max-width: 500px;
   }
-  .fugu-footer-logo{
+  .zuzu-footer-logo{
     margin-bottom: 30px;
   }
   p{
     color: #FFFFFF;
     opacity: 0.6;
   }
-  .fugu-copywright{
+  .zuzu-copywright{
     font-size: 16px;
     margin-top: 55px;
     @include max(991px) {
@@ -30,10 +29,9 @@ footer.fugu-footer-section{
   }
 }
 
-.fugu-footer-menu{
-  
-  @include max(575px){
-    margin-bottom: 40px;
+.zuzu-footer-menu{
+  @include max(767px){
+    margin-bottom: 40px!important;
   }
   span{
     font-weight: 600;
@@ -42,10 +40,13 @@ footer.fugu-footer-section{
     margin-bottom: 25px;
     display: block;
     color: var(--gray-10);
-    opacity: 0.6;
-    @include max(575px){
+    @include max(991px){
       margin-bottom: 20px;
     }
+  }
+  p{
+    color: var(--gray-10);
+    opacity: 0.6;
   }
   ul{
     li{
@@ -57,17 +58,18 @@ footer.fugu-footer-section{
         font-size: 18px;
         color: var(--gray-10);
         transition: all 0.4s;
+        opacity: 0.6;
         &:hover{
           opacity: 1;
           padding-left: 10px;
-          color: var(--warning-500);
+          opacity: 1;
         }
       }
     }
   }
 }
 
-.fugu-footer-margin{
+.zuzu-footer-margin{
   margin-left: 60px;
   @include max(991px) {
     margin:0;
@@ -77,101 +79,14 @@ footer.fugu-footer-section{
   }
 }
 
-
-// footer two
-footer.fugu-foote2-section {
-  background-color: var(--gray-800);
-  .fugu-footer-top{
-    padding: 110px 0;
-    border: none;
-    @include max(991px) {
-      padding: 80px 0;
-    }
-    @include max(767px) {
-      padding: 70px 0 ;
-    }
-  }
-  .fugu-default-content {
-    max-width:720px;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    h2, p{
-      color: var(--gray-10);
-    }
-    p{
-      opacity: 0.8;
-      padding: 0 30px;
-    }
-    .fugu-app-btn-wrap{
-      margin: 55px 0 0;
-      @include max(991px) {
-        margin-top: 30px 0 0;
-      }
-    }
-  }
-  
-}
-
-.fugu-footer-middle{
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  .fugu-footer-logo{
-    @include max(991px) {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-  }
-  .fugu-social-icon2{
-    text-align: right;
-    @include max(991px) {
-      text-align: center;
-    }
-  }
-}
-.fugu-footer-menu2{
-  @include max(991px) {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  ul{
-    li{
-      margin: 0 15px 10px;
-      display: inline-block;
-      &:first-child{
-        margin-left: 0;
-      }
-      &:last-child{
-        margin-right: 0;
-      }
-      a{
-        font-weight: 600;
-        color: var(--gray-10);
-        transition: all 0.4s;
-        &:hover{
-          color: var(--success-500);
-        }
-      }
-    }
-  }
-}
-.fugu-email {
-  font-weight: 600;
-  color: var(--gray-10);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  img{
-    margin-right: 10px;
-  }
-  @include max(991px) {
-    justify-content: center;
-  }
-}
-.fugu-footer-bottom {
+.zuzu-footer-bottom {
   padding: 35px 0;
+  border-top: 1px solid var(--gray-800);
   @include max(767px) {
     text-align: center;
+  }
+  .zuzu-footer-menu{
+    margin: 0!important;
   }
   p{
     font-size: 16px;
@@ -183,7 +98,7 @@ footer.fugu-foote2-section {
       margin: 0 0 20px;
     }
   }
-  .fugu-footer-menu{
+  .zuzu-footer-menu{
     text-align: right;
     @include max(767px) {
       text-align: center;
@@ -196,7 +111,6 @@ footer.fugu-foote2-section {
         padding-right: 20px;
         display: inline-block;
         position: relative;
-        opacity: 0.6;
         margin: 0;
         &::after{
           content: " ";
@@ -227,344 +141,46 @@ footer.fugu-foote2-section {
 }
 
 
-// footer 3
-
-footer.fugu--footer-section{
-  background-color: var(--gray-800);
-}
-.fugu--footer-top {
-  padding: 120px 0 60px;
-  border-bottom: 1px solid rgba(19, 17, 26, 0.1);
-  @include max(991px){
-    padding: 100px 0 60px;
-  }
-  @include max(767px){
-    padding: 80px 0 60px;
-  }
-
-}
-.fugu--textarea{
-  @include max(991px){
-    margin-bottom: 30px;
-    max-width: 500px;
-  }
-  .fugu--footer-logo{
-    margin-bottom: 30px;
-  }
-  p{
-    color: #FFFFFF;
-    opacity: 0.6;
-  }
-}
-
-.fugu--footer-menu{
-  @include max(575px){
-    margin-bottom: 35px;
-  }
-  
-  span{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1;
-    margin-bottom: 30px;
-    display: block;
-    color: white;
-    @include max(575px){
-      margin-bottom: 20px;
+.zuzu-footer-light{
+  .zuzu-textarea{
+    p{
+      color: var(--gray-800);
     }
   }
-  ul{
-    li{
-      margin-bottom: 6px;
-      &:last-child{
-        margin-bottom: 0;
-      }
-      a{
-        font-size: 18px;
-        opacity: 0.6;
-        color: var(--gray-10);
-        transition: all 0.4s;
-        &:hover{
-          opacity: 1;
-          padding-left: 10px;
-        }
-      }
+  .zuzu-footer-menu{
+    span{
+      color: var(--gray-800);
     }
-  }
-}
-
-.fugu--footer-bottom {
-  display: flex;
-  justify-content: center;
-  padding: 35px 0;
-  @include max(767px){
-    display: block;
-    text-align: center;
-  }
-  @include max(575px){
-    display: block;
-    text-align: center;
-    padding: 30px 0;
-  }
-  p{
-    font-size: 16px;
-    color: #FFFFFF;
-    opacity: 0.6;
-    margin: 0;
-    margin-right: 40px;
-    @include max(767px){
-      margin: 0 0 20px;
-    }
-  }
-  .fugu--footer-menu{
-    @include max(575px){
-      margin-bottom: 0;
+    p{
+      opacity: .6;
+      color: var(--gray-800);
     }
     ul{
       li{
-        padding-right: 20px;
-        display: inline-block;
-        position: relative;
-        &::after{
-          content: " ";
-          top: 14px;
-          right: 5px;
-          border-radius: 50%;
-          width: 5px;
-          height: 5px;
-          position: absolute;
-          background: #FFFFFF;
-          opacity: 0.8;
-        }
-        &:last-child:after{
-          content: none;
-        }
         a{
-          font-size: 16px;
+          opacity: .6;
+          color: var(--gray-800);
           &:hover{
-            padding: 0;
+            opacity: 1;
           }
         }
       }
     }
   }
-}
-
-// footer 4
-footer.fugu--foote2-section {
-  background-size: cover;
-  background-position: center;
-  .fugu--footer-top{
-    padding: 120px 0;
-    border: none;
-    @include max(991px) {
-      padding: 70px 0;
-    }
-    @include max(767px) {
-      padding: 50px 0 ;
-    }
-  }
-  .fugu--default-content {
-    max-width: 590px;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-  }
-
-}
-.fugu--star {
-  position: absolute;
-  top: -12px;
-  right: -40px;
-  -webkit-animation: float 3s ease-in-out infinite;
-  animation: float 3s ease-in-out infinite;
-  @include max(767px) {
-    display: none;
-  }
-}
-
-
-.fugu--footer-middle{
-  padding-bottom: 35px;
-  border-bottom: 1px solid var(--gray-800);
-  .fugu--footer-logo{
-    @include max(991px) {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-  }
-  .fugu--social-icon2{
-    text-align: right;
-    @include max(991px) {
-      text-align: center;
-    }
-  }
-}
-.fugu--footer-menu2{
-  text-align: center;
-  ul{
-    li{
-      margin: 0 15px;
-      display: inline-block;
-      &:first-child{
-        margin-left: 0;
-      }
-      &:last-child{
-        margin-right: 0;
-      }
-      a{
-        font-weight: 600;
-        color: var(--gray-800);
-        transition: all 0.4s;
-        &:hover{
-          color: var(--danger-500);
-        }
-      }
-    }
-  }
-}
-
-
-.fugu--footer-bottom.fugu--footer-bottom2{
-  display: block;
-  @include max(991px) {
-    text-align: center;
-  }
-  p{
-    color: var(--gray-800);
-    margin: 0;
-  }
-  .fugu--footer-menu{
-    text-align: right;
-    @include max(991px) {
-      text-align: center;
-      margin-top: 15px;
-    }
-    ul{
-      li{
-        a{
-          color: var(--gray-800);
-        }
-        &::after{
-          opacity: 0.6;
-          background-color: var(--gray-800);
-        }
-      }
-    }
-  }
-}
-
-// footer 5
-.fugu--footer-bottom3{
-  display: block;
-  p{
-    margin: 0;
-    @include max(991px) {
-      text-align: center;
-    }
-  }
-  .fugu--footer-menu{
-    text-align: right;
-    @include max(991px) {
-      text-align: center;
-      margin-top: 15px;
-    }
-  }
-}
-
-.fugu--info{
-  ul{
-    li{
-      padding-left: 32px;
-      position: relative;
-      margin-bottom: 18px;
-      &:last-child{
-        margin-bottom: 0;
-      }
-      a{
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.6);
-        img{
-          left: 0;
-          top: 6px;
-          position: absolute;
-        }
-      }
-    }
-  }
-}
-
-// footer four
-footer.fugo--footer-section.white-version{
-  background-color: #fff;
-  .fugo--textarea p{
-    color: #13111A;
-  }
-  
-  .fugo--footer-menu {
-    span{
-      color: #13111A;
-    }
-    ul{
-      li{
-        a{
-          color: #13111A;
-        }
-      }
-    }
-  }
-  .fugo--footer-bottom p{
-    color: #13111A;
-  }
-}
-
-
-// footer six
-.fugu--footer-section{
-  &.fugu--footer-light{
-    background-color: var(--warning-50);
-  }
-}
-
-.fugu--footer-light{
-  .fugu--footer-menu.newsletter{
-    margin: 0;
-  }
-  .fugu--footer-top {
-    @include max(767px) {
-      padding: 80px 0;
-    }
-}
-  .fugu--textarea{
+  .zuzu-footer-bottom{
+    border-top: 1px solid rgba(19, 17, 26, 0.1);
     p{
+      opacity: .6;
       color: var(--gray-800);
     }
-    @include max(1199px) {
-      max-width: 500px;
-      margin-bottom: 30px;
-    }
-  }
-  .fugu--footer-menu{
-    span{
-      color: var(--gray-800);
-    }
-    ul{
-      li{
-        a{
-          color: var(--gray-800);
+    .zuzu-footer-menu{
+      ul{
+        li{
+          &::after{
+            background-color: rgba(19, 17, 26, 0.5);
+          }
         }
       }
     }
   }
-  .fugu--footer-bottom {
-    p{
-      color: var(--gray-800);
-    }
-  }
-  @include max(767px) {
-    .fugu--footer-menu {
-      margin-bottom: 35px;
-  }
-  }
-  
 }

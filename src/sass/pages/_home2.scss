@@ -1,6 +1,6 @@
 // text slider
 
-.fugu-text-slider-section {
+.zuzu-text-slider-section {
   padding: 40px 0;
   background-color: var(--warning-200);
   @include max(1280px) {
@@ -30,7 +30,7 @@
 
 
 
-.fugu-text-slider-area1{
+.zuzu-text-slider-area1{
   padding: 21px 0;
   background-color: var(--primary-600);
   transform: rotate(-2.5deg);
@@ -42,7 +42,7 @@
     transform: rotate(0deg);
   }
 }
-.fugu-text-slider-area2{
+.zuzu-text-slider-area2{
   padding: 21px 0;
   background-color: var(--success-500);
   transform: rotate(3deg);
@@ -56,7 +56,7 @@
   transform: rotate(0deg);
 }
 }
-.fugu-text-slider {
+.zuzu-text-slider {
   &-data{
       display: flex!important;
       align-items: center;
@@ -99,7 +99,7 @@
 
 // trading section
 
-.fugu-trading{
+.zuzu-trading{
   &-card{
     &-thumb{
       position: relative;
@@ -133,7 +133,7 @@
   }
   &-card2{
     text-align: right;
-    .fugu-trading-card-thumb{
+    .zuzu-trading-card-thumb{
       padding-left: 0;
       @include max(991px) {
        padding-left: 160px;
@@ -146,7 +146,7 @@
         margin-bottom: 50px;
        }
     }
-    .fugu-trading-card-thumb2 {
+    .zuzu-trading-card-thumb2 {
       top: auto;
       left: 16%;
       transform: none;
@@ -159,12 +159,12 @@
         left: 0;
       }
   }
-  .fugu-shape7 {
+  .zuzu-shape7 {
       top: -29%;
       z-index: -1;
       right: -27%;
   }
-  .fugu-shape6 {
+  .zuzu-shape6 {
       top: 22%;
       left: -3%;
   }
@@ -172,7 +172,7 @@
   
 }
 
-.fugu-shape6 {
+.zuzu-shape6 {
   position: absolute;
   top: -10%;
   left: -23%;
@@ -184,7 +184,7 @@
     display: none;
   }
 }
-.fugu-shape7 {
+.zuzu-shape7 {
   position: absolute;
   top: -35%;
   z-index: -1;
@@ -195,7 +195,7 @@
 }
 
 // trading section
-.fugu-trading-section2{
+.zuzu-trading-section2{
   padding: 120px 0 150px;
   overflow: hidden;
   background-color: var(--warning-100);
@@ -213,12 +213,12 @@
 
 
 // text slider
-.fugu--text-slider-section2{
+.zuzu--text-slider-section2{
   background: var(--gray-800);
 }
 
 // about section
-.fugu--about-section{
+.zuzu--about-section{
   overflow: hidden;
   padding: 120px 0;
   @include max(991px) {
@@ -227,20 +227,20 @@
   @include max(767px) {
     padding: 80px 0 ;
   }
-  .fugu--default-content{
+  .zuzu--default-content{
     @include max(991px) {
       max-width: 500px;
     }
   }
 }
-.fugu--swiper-slider-wrap{
+.zuzu--swiper-slider-wrap{
   position: relative;
   @include max(991px) {
     margin-bottom: 40px;
   }
 }
 
-.fugu--double-star {
+.zuzu--double-star {
   position: absolute;
   left: -90px;
   bottom: 15%;
@@ -249,7 +249,7 @@
 }
 
 // default section
-.fugu--artwork-section {
+.zuzu--artwork-section {
   z-index: 0;
   overflow: hidden;
   position: relative;
@@ -261,13 +261,13 @@
   @include max(767px) {
     padding: 80px 0 0;
   }
-  .fugu--default-content{
+  .zuzu--default-content{
     @include max(991px) {
       max-width: 500px;
     }
   }
 }
-.fugu--artwork {
+.zuzu--artwork {
   &-right{
     text-align: right;
     position: relative;
@@ -325,15 +325,15 @@
 }
 
 // collection section
-.fugu--collection-section{
+.zuzu--collection-section{
   background-color: var(--warning-600);
 }
 
 // roadmap section
 
-.fugu--roadmap-v2{
+.zuzu--roadmap-v2{
   background: linear-gradient(180deg, #EEE6D0 -29.02%, rgba(255, 255, 255, 0) 160.21%);
-  .fugu--section-title {
+  .zuzu--section-title {
     max-width: 485px;
     text-align: left;
     margin: 0 0 75px;

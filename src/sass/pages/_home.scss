@@ -1,6 +1,6 @@
 
 // app section
-.fugu-apps-thumb {
+.zuzu-apps-thumb {
     position: relative;
     transform: rotate(-5deg);
     margin-left: 60px;
@@ -13,12 +13,12 @@
         transform: none !important;
     }
 }
-.fugu-apps-thumb{
-    &.fugu-apps-thumb2{
+.zuzu-apps-thumb{
+    &.zuzu-apps-thumb2{
         transform: rotate(-5deg)
     }
 }
-.fugu-shape3 {
+.zuzu-shape3 {
     position: absolute;
     top: 0;
     z-index: -1;
@@ -38,7 +38,7 @@
 }
 
 // errors 404
-.fugu-error-content {
+.zuzu-error-content {
     padding: 190px 0 110px;
     text-align: center;
     max-width: 640px;
@@ -101,7 +101,7 @@
     
 }
 
-.fugu-countdown{
+.zuzu-countdown{
     &-wrap{
         display: flex;
         justify-content: center;
@@ -153,7 +153,7 @@
         }
     }
 }
-.fugu-go-top {
+.zuzu-go-top {
     position:fixed;
     bottom: 10%;
     right: 3%;
@@ -171,7 +171,7 @@
         height: 40px;
         border-radius: 3px;
         position: absolute;
-        background-color: var(--warning-500);
+        background-color: var(--primary-600);
         transform: translate(-50%, -50%)
     }
     img{
@@ -179,7 +179,7 @@
     }
   }
 
-  .fugu-btn-wrap {
+  .zuzu-btn-wrap {
     margin-top: 55px;
     @include max(991px) {
         margin-top: 40px;
@@ -192,17 +192,17 @@
 
 
 // slider one section
-.fugu--slider-section{
+.zuzu--slider-section{
     background-color: var(--gray-800);
     position: relative;
     z-index: 0;
 }
 
-.fugu--slider-one .slick-slide{
+.zuzu--slider-one .slick-slide{
     margin: 2px 12px;
   }
-  .fugu--slider-one .prev-arrow, 
-  .fugu--slider-one .fugu--arrow {
+  .zuzu--slider-one .prev-arrow, 
+  .zuzu--slider-one .zuzu--arrow {
     left: -30px;
     top: 50%;
     z-index: 9;
@@ -223,7 +223,7 @@
     background-image: url(../images/svg2/arrow-left.svg);
     
   }
-  .fugu--slider-one .fugu--arrow {
+  .zuzu--slider-one .zuzu--arrow {
     left: auto;
     right: -30px;
     background-image: url(../images/svg2/arrow-right.svg);
@@ -232,15 +232,15 @@
     display: none;
   }
 
-  .fugu--slider-one{
+  .zuzu--slider-one{
     .slick-slide.slick-current.slick-active{
-        .fugu--btn:before {
+        .zuzu--btn:before {
             opacity: 1;
         }
-        .fugu--btn{
+        .zuzu--btn{
             color: var(--gray-10);
         }
-        .fugu--card-wrap{
+        .zuzu--card-wrap{
             box-shadow: 0 0 0 1px rgba(255, 255, 255, 0);
             &:before{
                 opacity: 1;
@@ -252,10 +252,10 @@
  
 
 //   protfolio section
-.fugu--portfolio-section{
+.zuzu--portfolio-section{
     position: relative;
     z-index: 0;
-    .fugu--section-title{
+    .zuzu--section-title{
         margin: 0 auto 55px;
     }
 }
@@ -263,7 +263,7 @@
 
 
 
-.fugu--portfolio-menu{
+.zuzu--portfolio-menu{
     margin-bottom: 55px;
     @include max(991px) {
         margin-bottom: 35px;
@@ -325,24 +325,24 @@
     
 }
 
-.fugu--portfolio-section{
+.zuzu--portfolio-section{
     background-color: var(--gray-800);
-    .fugu--card-wrap{
+    .zuzu--card-wrap{
         margin-bottom: 24px;
         margin-left: 24px;
     }
 }
-.fugu--portfolio-wrap {
+.zuzu--portfolio-wrap {
     margin-left: -24px;
 }
-.fugu--portfolio-btn {
+.zuzu--portfolio-btn {
     text-align: center;
     margin-top: 56px;
     @include max(991px) {
         margin-top: 35px;
     }
 }
-.fugu--section-button{
+.zuzu--section-button{
     @include max(991px) {
         margin-top: 35px;
         text-align: center;
@@ -352,12 +352,12 @@
 
 // text slider
 
-.fugu--text-slider-section {
+.zuzu--text-slider-section {
     padding: 22px 0;
     overflow: hidden;
     background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
 }
-.fugu--text-slider {
+.zuzu--text-slider {
     &-data{
         display: flex!important;
         align-items: center;
@@ -395,7 +395,7 @@
   }
 
 // roadmap section
-.fugu--roadmap-section{
+.zuzu--roadmap-section{
     padding: 115px 0 80px;
     background-color: var(--gray-800);
     @include max(991px) {
@@ -404,19 +404,19 @@
     @include max(767px) {
         padding: 80px 0 40px;
     }
-    .fugu--iconbox-wrap{
+    .zuzu--iconbox-wrap{
         margin-bottom: 40px;
     }
 }
 
 // newsletter section
-.fugu--newslatter-section{
+.zuzu--newslatter-section{
     z-index: 0;
     position: relative;
     background-color: var(--gray-800);
 }
 
-.fugu--newslatter-wrap {
+.zuzu--newslatter-wrap {
     border-radius: 10px;
     padding: 100px;
     text-align: center;
@@ -431,7 +431,7 @@
     @include max(400px) {
         padding: 30px;
     }
-    .fugu--section-title {
+    .zuzu--section-title {
         max-width: 585px;
         margin: 0 auto 40px;
     }

@@ -1,4 +1,4 @@
-.fugu-breadcrumb-section{
+.zuzu-breadcrumb-section{
   padding: 188px 0 120px;
   position: relative;
   background-color: var(--warning-400);
@@ -41,7 +41,7 @@
   }
 }
 
-.fugu-shape8 {
+.zuzu-shape8 {
   position: absolute;
   top: 32%;
   -webkit-animation: float 3s ease-in-out infinite;
@@ -50,7 +50,7 @@
     display: none;
   }
 }
-.fugu-shape9 {
+.zuzu-shape9 {
   position: absolute;
   right: 4%;
   bottom: 14%;
@@ -60,118 +60,3 @@
     display: none;
   }
 }
-
-
-// fugo + nexto
-
-
-.fugu--breadcrumb-thumb {
-  overflow: hidden;
-  border-radius: 100%;
-  animation: zoom-in-zoom-out2 3s ease-out infinite;
-  img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-  }
-  &-bottom, 
-  &-top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include max(767px) {
-      display: none;
-    }
-  }
-  &-top{
-    max-width: 873px;
-    margin: 0 auto 80px;
-  }
-  &.thumb1{
-    width: 80px;
-    height: 80px;
-  }
-  &.thumb2{
-    width: 48px;
-    height: 45px;
-  }
-  &.thumb3{
-    width: 60px;
-    height: 60px;
-  }
-  &.thumb4{
-    width: 86px;
-    height: 80px;
-  }
-  
-}
-
-@keyframes zoom-in-zoom-out2 {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.2, 1.2);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
-// breadcrumb section
-.fugu--breadcrumbs-section {
-    padding: 210px 0 120px;
-    position: relative;
-    z-index: 0;
-    @include max(991px) {
-      padding: 140px 0 50px;
-    }
-    @include max(479px) {
-      padding: 110px 0 50px;
-    }
-}
-.fugu--breadcrumbs-data{
-  max-width: 760px;
-  h1{
-    letter-spacing: -1px;
-    font-family: $another-font;
-  }
-  p{
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: -0.5px;
-    &:last-child{
-      margin-bottom: 0;
-    }
-    @include max(767px) {
-      font-size: 18px;
-    }
-  }
-  &.dark-content{
-    h1, p{
-      color: var(--gray-800);
-    }
-  }
-  &.center-content{
-    margin: 0 auto;
-    text-align: center;
-    .fugu--newsletter {
-      margin-top: 40px;
-  }
-  }
-}
-
-.dark-version .fugu--breadcrumbs-data{
-  h1, p{
-    color: var(--gray-10);
-  }
-}
-
-.fugu--blog-shape1 {
-  top: 0;
-  z-index: -1;
-  position: absolute;
-}
-
-

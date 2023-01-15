@@ -1,6 +1,6 @@
 
 /* card */
-.fugu--card {
+.zuzu--card {
   &-wrap{
     border-radius: 10px;
     padding: 20px;
@@ -28,14 +28,14 @@
       border-radius: inherit;
       background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
     }
-    &:hover .fugu--btn:before{
+    &:hover .zuzu--btn:before{
       color: var(--gray-10);
       opacity: 1;
     }
-    &:hover .fugu--btn{
+    &:hover .zuzu--btn{
       color: var(--gray-10);
     }
-    &:hover .fugu--card-thumb img{
+    &:hover .zuzu--card-thumb img{
       transform: scale(1.1) rotate(3deg);
     }
   }
@@ -90,16 +90,16 @@
         font-family: $body-font;
       }
     }
-    .fugu--btn{
+    .zuzu--btn{
       min-width: inherit;
     }
   }
 }
 
 // card two
-  .fugu--card{
+  .zuzu--card{
     &-wrap{
-      &.fugu--card2{
+      &.zuzu--card2{
         background: var(--gray-10);
         border: 3px solid var(--gray-800);
         border-radius: 3px;
@@ -107,12 +107,12 @@
         &:before{
           content: none;
         }
-        .fugu--card-thumb{
+        .zuzu--card-thumb{
           img{
             border-radius: 3px;
           }
         }
-        .fugu--card-data {
+        .zuzu--card-data {
           h3{
             color: var(--gray-800);
           }
@@ -128,7 +128,7 @@
             }
           }
         }
-        .fugu--card-footer{
+        .zuzu--card-footer{
           &-data{
             h4{
               font-weight: 400;
@@ -137,7 +137,7 @@
               opacity: 0.8;
             }
           }
-          .fugu--btn{
+          .zuzu--btn{
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -172,7 +172,7 @@
         }
        
       }
-      &.fugu--card3{
+      &.zuzu--card3{
         background: var(--gray-10);
         border: none;
         border-radius: 15px;
@@ -180,19 +180,19 @@
         &:before{
           content: none;
         }
-        .fugu--card-thumb{
+        .zuzu--card-thumb{
           img{
             border-radius: 13px;
           }
         }
-        .fugu--card-data {
+        .zuzu--card-data {
           h3{
             font-size: 18px;
             font-weight: 600;
             color: var(--gray-800);
           }
         }
-        .fugu--card-footer{
+        .zuzu--card-footer{
           &-data{
             display: flex;
             align-items: center;
@@ -205,7 +205,7 @@
             }
           }
         }
-        a.fugu--card-btn {
+        a.zuzu--card-btn {
           width: 93.76px;
           height: 31.25px;
           background: #724FE5;
@@ -221,7 +221,7 @@
     }
   }
 
-.fugu--slider-two{
+.zuzu--slider-two{
    .slick-slide{
     margin: 0 12px;
   }
@@ -232,13 +232,13 @@
 
 // blog card
 
-.fugu--blog {
+.zuzu--blog {
   &-wrap{
     overflow: hidden;
     border-radius: 10px;
     backdrop-filter: blur(400px);
     background: rgba(90, 75, 124, 0.2);
-    &:hover .fugu--blog-thumb img{
+    &:hover .zuzu--blog-thumb img{
       transform: scale(1.07) rotate(2deg);
     }
   }
@@ -256,7 +256,7 @@
       object-position: center top;
       transition: all 0.5s;
     }
-    .fugu--blog-badge {
+    .zuzu--blog-badge {
       background: #FFFFFF;
       border-radius: 10px;
       position: absolute;
@@ -355,10 +355,10 @@
   }
 }
 
-.fugu--blog-wrap2{
+.zuzu--blog-wrap2{
   backdrop-filter: inherit;
   background: transparent;
-  .fugu--blog{
+  .zuzu--blog{
     &-thumb{
       height: 280px;
       border-radius: 10px;
@@ -412,7 +412,7 @@
   }
 }
 
-a.fugu--readmore-btn {
+a.zuzu--readmore-btn {
   font-weight: 700;
   font-size: 16px;
   color: white;
@@ -443,8 +443,8 @@ a.fugu--readmore-btn {
   }
 }
 
-.fugu--blog-wrap2{
-  &:hover a.fugu--readmore-btn span::before{
+.zuzu--blog-wrap2{
+  &:hover a.zuzu--readmore-btn span::before{
     opacity: 1;
   }
 }

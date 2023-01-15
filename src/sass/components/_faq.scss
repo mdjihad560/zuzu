@@ -1,5 +1,5 @@
 
-.fugu-accordion {
+.zuzu-accordion {
   &-item{
     margin-bottom: 40px;
     padding-bottom: 40px;
@@ -18,7 +18,7 @@
     @include max(991px) {
       margin-top: 40px;
     }
-    .fugu-accordion-item{
+    .zuzu-accordion-item{
       display: flex;
       margin-bottom: 24px;
       padding-bottom: 24px;
@@ -43,7 +43,7 @@
 }
 
 
-a.fugu-faq-btn {
+a.zuzu-faq-btn {
   font-size: 16px;
   position: absolute;
   bottom: 0;
@@ -116,7 +116,7 @@ a.fugu-faq-btn {
 
 
 // faq page
-.fugu-tab-menu{
+.zuzu-tab-menu{
   margin-bottom: 80px;
   @include max(991px) {
     margin-bottom: 40px;
@@ -176,22 +176,22 @@ a.fugu-faq-btn {
 
 
 
-.fugu--faq-section{
+.zuzu--faq-section{
   background-color: var(--warning-600);;
-  .fugu--default-content{
+  .zuzu--default-content{
     margin-right: 20px;
     @include max(991px) {
       max-width: 500px;
     }
   }
 }
-.fugu--faq-section2{
+.zuzu--faq-section2{
   z-index: 0;
   position: relative;
   background-color: var(--gray-800);
 }
 
-.fugu--accordion-one{
+.zuzu--accordion-one{
   .accordion-item {
     border: none;
     background-color: transparent;
@@ -304,7 +304,7 @@ a.fugu-faq-btn {
   }
 }
 
-.fugu--accordion-two{
+.zuzu--accordion-two{
   max-width: 1076px;
   margin: 0 auto;
   .accordion-body {
@@ -318,13 +318,13 @@ a.fugu-faq-btn {
   }
 }
 
-.fugu--accordion-two .accordion-button:not(.collapsed)::after {
+.zuzu--accordion-two .accordion-button:not(.collapsed)::after {
   transform: rotate(-180deg);
 }
 
 
 // faq v6
-.fugu--accordion-one.accordion-two.accordion-six{
+.zuzu--accordion-one.accordion-two.accordion-six{
   .accordion-button{
     font-size: 24px;
     padding: 20px 0;
@@ -339,7 +339,7 @@ a.fugu-faq-btn {
   }
 } 
 
-.fugu--accordion-one.accordion-two.accordion-seven{
+.zuzu--accordion-one.accordion-two.accordion-seven{
   .accordion-item{
     border-bottom: 1px solid rgba(19, 17, 26, 0.1);
     &:last-child{
@@ -362,7 +362,7 @@ a.fugu-faq-btn {
 
 
 // v8
-.fugu-faq-light.fugu--accordion-one.accordion-three {
+.zuzu-faq-light.zuzu--accordion-one.accordion-three {
   .accordion-button{
     color: var(--gray-800);
     &:after{

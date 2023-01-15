@@ -1,4 +1,4 @@
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap{
     border-radius: 3px;
     padding: 39px;
@@ -15,7 +15,7 @@
     &:hover{
       background-color: var(--warning-300);
     }
-    &.fugu-iconbox-wrap5{
+    &.zuzu-iconbox-wrap5{
       border: 1px solid rgba(19, 17, 26, 0.1);
       &:hover{
         background: #FFFFFF;
@@ -35,7 +35,7 @@
     }
   }
 }
-.fugu-icon-btn{
+.zuzu-icon-btn{
   font-size: 16px;
   font-weight: 700;
   color: var(--gray-800);
@@ -50,7 +50,7 @@
 }
 
 // icon box 2
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap2{
     padding: 30px;
     border-radius: 10px;
@@ -63,7 +63,7 @@
 }
 
 // feature section 2
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap3{
     padding: 40px;
     text-align: center;
@@ -92,7 +92,7 @@
 }
 
 // icon box about page
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap4{
     padding: 29px;
     text-align: center;
@@ -106,7 +106,7 @@
   }
 }
 
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap6{
     text-align: center;
     padding: 0 22px;
@@ -124,7 +124,7 @@
   
 }
 
-.fugu-iconbox-border{
+.zuzu-iconbox-border{
   position: relative;
   &:before{
     content: "";
@@ -147,7 +147,7 @@
 
 
 
-.fugu--iconbox {
+.zuzu--iconbox {
   &-wrap{
     z-index: 0;
     padding: 0 15px;
@@ -193,10 +193,10 @@
  
 }
 
-.fugu--roadmap-section{
+.zuzu--roadmap-section{
   .col-xl-3.col-md-6{
     &:nth-child(4){
-    .fugu--iconbox-wrap{
+    .zuzu--iconbox-wrap{
         &:before{
           content: none;
         }
@@ -204,7 +204,7 @@
     }
     @include max(1199px) {
       &:nth-child(2){
-        .fugu--iconbox-wrap{
+        .zuzu--iconbox-wrap{
             &:before{
               content: none;
             }
@@ -213,7 +213,7 @@
     }
   }
   @include max(767px) {
-    .fugu--iconbox-wrap{
+    .zuzu--iconbox-wrap{
         &:before{
           content: none;
         }
@@ -223,8 +223,8 @@
 
 
 // icon box v2.0
-.fugu--roadmap-v2{
-  .fugu--iconbox{
+.zuzu--roadmap-v2{
+  .zuzu--iconbox{
     &-wrap{
       text-align: left;
       padding: 0;
@@ -258,7 +258,7 @@
 }
 
 // iconbox v3
-.fugu--iconbox-wrap3{
+.zuzu--iconbox-wrap3{
     padding: 40px;
     border-radius: 3px;
     background: linear-gradient(118.28deg, #17181A -8.97%, #636675 141.84%);
@@ -268,16 +268,16 @@
     &:before {
       content: none;
     }
-    &:hover .fugu--iconbox-thumb{
+    &:hover .zuzu--iconbox-thumb{
       background-color: var(--gray-10);
     }
-    &:hover .fugu--iconbox-thumb{
+    &:hover .zuzu--iconbox-thumb{
       path{
         fill: var(--primary-500);
       }
       
     }
-    .fugu--iconbox{
+    .zuzu--iconbox{
       &-thumb{
         width: 80px;
         height: 80px;
@@ -302,11 +302,11 @@
 }
 
 
-.fugu--iconbox-wrap4{
+.zuzu--iconbox-wrap4{
   border-radius: 10px;
   border: 1px solid var(--gray-10);
   background: rgba(90, 75, 124, 0.2);
-  .fugu--iconbox{
+  .zuzu--iconbox{
     &-thumb{
       background: linear-gradient(0deg, #ADDCFF 0%, #EAF6FF 50.28%, #EAF6FF 100%);
     }
@@ -314,10 +314,10 @@
   }
 }
 
-.fugu--iconbox-wrap5{
+.zuzu--iconbox-wrap5{
   background: #211D2E;
 border-radius: 10px;
-  .fugu--iconbox{
+  .zuzu--iconbox{
     &-thumb{
       background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
     }
@@ -336,7 +336,7 @@ border-radius: 10px;
 
 
 // iconbox v6
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap7{
     display: flex;
     align-items: center;
@@ -345,7 +345,7 @@ border-radius: 10px;
     @include max(1399px) {
       margin-right: 0;
     }
-    &:hover .fugu-iconbox-icon7{
+    &:hover .zuzu-iconbox-icon7{
       box-shadow: 0 0 0 0 var(--gray-800);
     }
   }
@@ -382,7 +382,7 @@ border-radius: 10px;
   }
 }
 
-.fugu-iconbox-title{
+.zuzu-iconbox-title{
   h5{
     font-weight: 600;
     margin: 0 0 75px;
@@ -394,14 +394,14 @@ border-radius: 10px;
   }
 }
 
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap8{
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 24px;
     transition: all 0.4s;
     background-color: var(--warning-50);
-    &:hover a.fugu-icon-btn3{
+    &:hover a.zuzu-icon-btn3{
       box-shadow: 0 4px 0 0 var(--gray-800);
       background-color: var(--primary-500);
       path{
@@ -431,7 +431,7 @@ border-radius: 10px;
 }
 
 // icon box v7
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap9{
     padding: 40px;
     border-radius: 3px;
@@ -441,7 +441,7 @@ border-radius: 10px;
     &:hover{
       background-color: var(--gray-800);
     }
-    &:hover .fugu-iconbox-icon9{
+    &:hover .zuzu-iconbox-icon9{
       background-color: var(--gray-500);
     }
     @include max(991px) {
@@ -449,7 +449,7 @@ border-radius: 10px;
     }
     &.active{
       background-color: var(--gray-800);
-      .fugu-iconbox-icon9{
+      .zuzu-iconbox-icon9{
         background-color: var(--gray-500);
       }
     }
@@ -477,7 +477,7 @@ border-radius: 10px;
   }
 }
 
-.fugu-iconbox{
+.zuzu-iconbox{
   &-wrap10{
     text-align: center;
     margin-bottom: 24px;
@@ -494,7 +494,7 @@ border-radius: 10px;
     }
   }
 }
-.fugu-iconbox-bg {
+.zuzu-iconbox-bg {
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 15%;
