@@ -79,6 +79,14 @@
       background-color: var(--primary-600);
     }
   }
+  &.btn-blue{
+    color: var(--gray-10);
+    background-color: var(--primary-600);
+    &:hover{
+      color: var(--primary-600);
+      background-color: var(--gray-10);
+    }
+  }
   &.btn-pink{
     color: var(--gray-10);
     background-color: var(--pink-500);

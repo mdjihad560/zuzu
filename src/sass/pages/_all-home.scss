@@ -1,0 +1,227 @@
+.zuzu-go-top {
+  position:fixed;
+  bottom: 10%;
+  right: 3%;
+  z-index: 0;
+  z-index: 99;
+  display:none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  &:before{
+      content: "";
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      position: absolute;
+      background-color: var(--primary-600);
+      transform: translate(-50%, -50%)
+  }
+  img{
+      transform: rotate(-90deg);
+  }
+}
+
+.zuzu-thumb{
+  @include max(991px) {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.zuzu-bank-card-wrap {
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+.zuzu-bank-card1 {
+  position: absolute;
+  top: -73px;
+  right: 20px;
+  -webkit-animation: float 4s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+  @include max(991px) {
+    right: 100px;
+  }
+  @include max(767px) {
+    top: -35px;
+    right: 77px;
+    width: 420px;
+  }
+  @include max(575px) {
+    width: auto;
+  }
+}
+
+.zuzu-chart-thumb {
+  margin-top: 56px;
+  margin-bottom: 10px;
+}
+
+
+.icon-rotate {
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.zuzu-circle-thumb {
+  float: right;
+  -webkit-animation: rotate-animation 40s infinite linear;
+  -moz-animation: rotate-animation 40s infinite linear;
+  -o-animation: rotate-animation 40s infinite linear;
+  animation: rotate-animation 40s infinite linear;
+  @include max(991px) {
+    margin-bottom: 30px;
+    float: none;
+    text-align: center;
+  }
+}
+
+// v2
+
+.fugu-card-thumb-wrap{
+  position: relative;
+  float: right;
+  @include max(991px) {
+    float: none;
+    margin: 0 100px 80px;
+  }
+  @include max(767px) {
+    margin: 0 0 50px;
+  }
+}
+
+.zuzu-card4{
+  width: 390px;
+  margin: 0 auto;
+  transform: rotate(10deg);
+  box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
+  &:hover{
+    box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
+  }
+  @include max(767px) {
+    width: 100%;
+    transform: rotate(0deg);
+  }
+}
+.zuzu-card5{
+  width: 314px;
+  z-index: -1;
+  bottom: 47px;
+  left: -32%;
+  transform: rotate(-5deg);
+  position: absolute;
+  box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
+  @include max(1200px) {
+    left: -17%;
+  }
+  &:hover{
+    box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
+  }
+  .zuzu--card-thumb{
+    height: 280px;
+  }
+  @include max(767px) {
+    display: none;
+  }
+}
+
+// v3
+
+.zuzu-earth-thumb{
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+
+.zuzu-animation-circle {
+  position: absolute;
+  top: -12px;
+  left: -11%;
+  -webkit-animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
+    @include max(991px) {
+      left: 12%;
+    }
+    @include max(767px) {
+      left: 0;
+    }
+    @include max(479px) {
+      left: -25px;
+    }
+}
+
+.box3{
+  left: 10%;
+  bottom: 10%;
+  img{
+    width: 76%;
+  }
+  @include max(991px) {
+    display: none;
+  }
+}
+.box4{
+  top: -60px;
+  right: 5%;
+  @include max(1200px) {
+    right: 0;
+  }
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    width: 94%;
+    @include max(1200px) {
+      width: 70%;
+    }
+  }
+}
+
+// newsletter section
+.zuzu-newsletter-wrap{
+  padding: 80px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--gray-800);
+  @include max(991px) {
+    padding: 70px;
+  }
+  @include max(767px) {
+    padding: 50px 40px;
+  }
+  @include max(575px) {
+    padding: 30px;
+  }
+  .zuzu-default-content{
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}
+

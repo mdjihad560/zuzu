@@ -287,3 +287,25 @@ a.zuzu-popup img{
     height: 60px;
   }
 }
+
+
+.zuzu-popup .waves2{
+  width: 200px;
+  height: 200px;
+  left: -40px;
+  top: -40px;
+  
+  @include max(991px) {
+    width: 140px;
+    height: 140px;
+    left: -25px;
+    top: -25px;
+  }
+  @include max(767px) {
+    width: 130px;
+    height: 130px;
+    left: -28px;
+    top: -28px;
+  }
+}
+

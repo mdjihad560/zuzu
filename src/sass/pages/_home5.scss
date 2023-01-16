@@ -1,24 +1,6 @@
 // client section
-.zuzu--client-section{
-  padding: 0 0 120px;
-  @include max(1199px) {
-    padding: 0 0 100px;
-  }
-  @include max(767px) {
-    padding: 0 0 80px;
-  }
-  background-color: var(--gray-800);
-}
-.zuzu--client-title{
-  margin-bottom: 60px;
-  text-align: center;
-  p{
-    font-weight: 600;
-    font-size: 24px;
-    margin: 0;
-    color: white;
-  }
-}
+
+
 
 // zuzu--feature-section
 .zuzu--feature-section{

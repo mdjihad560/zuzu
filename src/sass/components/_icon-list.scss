@@ -1,5 +1,5 @@
 .zuzu-icon-list{
-  margin-top: 55px;
+  margin-top: 45px;
   @include max(991px) {
     margin-top: 30px;
   }
@@ -21,47 +21,10 @@
       }
     }
   }
-}
-
-.zuzu-icon-list2{
-  margin-top: 55px;
-  @include max(991px) {
-    margin-top: 30px;
-  }
-  ul{
-    li{
-      padding-left: 70px;
-      position: relative;
-      margin-bottom: 25px;
-      &:last-child{
-        margin: 0;
-      }
-      .fulo-list-icon {
-        width: 50px;
-        height: 50px;
-        background: red;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-        position: absolute;
-        left: 0;
-        background-color: var(--gray-800);
-    }
-    }
-  }
-}
-
-.zuzu-icon-list3{
-  margin-top: 45px;
-  @include max(991px) {
-    margin-top: 30px;
-  }
-  ul{
-    li{
-      padding-left: 40px;
-      img{
-        top: -2px;
+  &.dark{
+    ul{
+      li{
+        color: var(--gray-10);
       }
     }
   }

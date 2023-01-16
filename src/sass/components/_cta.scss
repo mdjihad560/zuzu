@@ -1,55 +1,70 @@
 .zuzu-cta-section{
-  padding: 95px 0;
-  background-color: var(--warning-400);
-  @include max(767px) {
-    padding: 80px 0;
+  padding-top: 50px;
+  @include max(1199px) {
+    padding-top: 0;
   }
-  .zuzu-default-content {
-    &.large-content{
-      @include max(991px) {
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto 30px;
-      }
-     
+}
+
+.zuzu-cta-wrap {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  padding: 80px 60px 80px 80px;
+  @include max(1199px) {
+    border-radius: 5px;
+    padding: 80px 60px 0px 80px;
+  }
+  @include max(575px) {
+    padding: 50px 50px 0 50px;
+  }
+  .zuzu-default-content{
+    @include max(1199px) {
+      text-align: center;
     }
   }
 }
-.zuzu-cta-app-btn-wrap {
-  width: 100%;
-  text-align: right;
-  @include max(991px) {
+
+.zuzu-cta-thumb {
+  position: absolute;
+  bottom: 0;
+  @include max(1199px) {
+    position: static;
+    margin-top: 30px;
     text-align: center;
   }
 }
 
-
-.zuzu--cta-section {
-  z-index: 0;
-  background-size: cover;
-  position: relative;
-  background-color: var(--gray-800);
-}
-
-.zuzu--cta-wrap{
-  border-radius: 10px;
-  padding: 80px 110px;
-  background-color: var(--primary-500);
-  @include max(1400px) {
-    padding: 80px;
-  }
-  @include max(991px) {
-    text-align: center;
-  }
-  @include max(767px) {
-    padding: 50px;
+.zuzu-cta-btn-wrap {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  @include max(1199px) {
+    justify-content: center;
   }
   @include max(575px) {
-    padding: 35px;
+    display: block;
+  }
+  @include max(575px) {
+    margin-top: 30px;
+  }
+}
+.zuzu-app-btn{
+  margin-right: 20px;
+  transition: all 0.4s;
+  display: inline-block;
+  @include max(575px) {
+    margin: 10px!important;
+  }
+  &:hover{
+    transform: translateY(-5px);
+  }
+  &:last-child{
+    margin-right: 0;
   }
 }
 
-// cta v6
+// cta v2
 .zuzu-cta2-wrap{
   border-radius: 20px;
   padding: 80px;

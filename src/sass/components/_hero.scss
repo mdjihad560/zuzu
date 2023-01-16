@@ -3,6 +3,12 @@
   background-size: cover;
   background-position: center center;
 }
+.zuzu-btn-wrap {
+  margin-top: 45px;
+  @include max(991px) {
+      margin-top: 40px;
+  }
+}
 .zuzu-hero-section {
   z-index: 0;
   overflow: hidden;
@@ -489,38 +495,3 @@
 }
 
 
-// card v2
-.zuzu--card4{
-  width: 390px;
-  margin: 0 auto;
-  transform: rotate(10deg);
-  box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
-  &:hover{
-    box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
-  }
-  @include max(767px) {
-    width: 100%;
-    transform: rotate(0deg);
-  }
-}
-.zuzu--card5{
-  width: 314px;
-  z-index: -1;
-  bottom: 47px;
-  left: -32%;
-  transform: rotate(-5deg);
-  position: absolute;
-  box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
-  @include max(1200px) {
-    left: -17%;
-  }
-  &:hover{
-    box-shadow: 0px 3.78302px 56.7453px rgba(0, 0, 0, 0.1);
-  }
-  .zuzu--card-thumb{
-    height: 280px;
-  }
-  @include max(767px) {
-    display: none;
-  }
-}

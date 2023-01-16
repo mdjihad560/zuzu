@@ -266,48 +266,50 @@ if(zuzu_testimonial_slider.is_exist()){
     infinite: true,
     slidesToShow: 3, 
     slidesToScroll: 1,
+    centerPadding: '180px',
     arrows: false,
-    dots: false,
-    autoplay: true,
+    dots: true,
+    centerMode: true,
+    autoplay: false,
     autoplaySpeed: 2000,
+    
     responsive: [
     {
-      breakpoint: 991,
+      breakpoint: 1499,
       settings: {
         slidesToShow: 2,
       }
     },
     {
-      breakpoint: 767,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
+        centerPadding: '100px',
       }
     },
-
-    ]
-  });
-
-}
-
-/*--------------------------------------------------------------
-zuzu TESTIMONIAL SLIDER 2
---------------------------------------------------------------*/
-var zuzu_testimonial_slider2 = $('.zuzu-testimonial-slider2');
-if(zuzu_testimonial_slider2.is_exist()){
-  zuzu_testimonial_slider2.slick({
-    infinite: true,
-    slidesToShow: 2, 
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
     {
       breakpoint: 991,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
+        centerPadding: '70px',
       }
+      
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '70px',
+      }
+      
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '0',
+      }
+      
     },
 
     ]
@@ -384,125 +386,56 @@ var popup_youtube = $('.zuzu-popup');
 // fugo old versions
 
 /*--------------------------------------------------------------
-COUNTER JS INIT
---------------------------------------------------------------*/
-var nexto_counter = $('#zuzu--counter');
-  if(nexto_counter.is_exist()){
-      var a = 0;
-
-      var oTop = $(nexto_counter).offset().top - window.innerHeight;
-      if (a == 0 && $(window).scrollTop() > oTop) {
-        $('.zuzu--counter').each(function() {
-          var $this = $(this),
-            countTo = $this.attr('data-percentage');
-          $({
-            countNum: $this.text()
-          }).animate({
-              countNum: countTo
-            },
-            {
-              duration: 4000,
-              easing: 'swing',
-              step: function() {
-                $this.text(Math.floor(this.countNum));
-              },
-              complete: function() {
-                $this.text(this.countNum);
-              }
-            });
-        });
-        a = 1;
-      }
-
-}
-
-/*--------------------------------------------------------------
-COUNTER TWO JS INIT
---------------------------------------------------------------*/
-var nexto_counter = $('#zuzu--counter2');
-  if(nexto_counter.is_exist()){
-      var a = 0;
-      $(window).scroll(function() {
-
-        var oTop = $(nexto_counter).offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.zuzu--counter').each(function() {
-            var $this = $(this),
-              countTo = $this.attr('data-percentage');
-            $({
-              countNum: $this.text()
-            }).animate({
-                countNum: countTo
-              },
-              {
-                duration: 4000,
-                easing: 'swing',
-                step: function() {
-                  $this.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                  $this.text(this.countNum);
-                }
-              });
-          });
-          a = 1;
-        }
-
-      });
-}
-
-
-/*--------------------------------------------------------------
 NEXTO SLIDER ONE
 --------------------------------------------------------------*/
-var nexto_slider_one = $('.zuzu--slider-one');
-  if(nexto_slider_one.is_exist()){
-    nexto_slider_one.slick({
-      infinite: true,
-      slidesToShow: 4, 
-      slidesToScroll: 1,
-      arrows: true,
-      autoplay: false,
-      autoplay: true,
-	    autoplaySpeed: 2000,
-      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-			nextArrow: '<button class="slide-arrow zuzu--arrow"></button>',
-      responsive: [
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false
-          }
-        }
+// var nexto_slider_one = $('.zuzu--slider-one');
+//   if(nexto_slider_one.is_exist()){
+//     nexto_slider_one.slick({
+//       infinite: true,
+//       slidesToShow: 4, 
+//       slidesToScroll: 1,
+//       arrows: true,
+//       autoplay: false,
+//       autoplay: true,
+// 	    autoplaySpeed: 2000,
+//       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+// 			nextArrow: '<button class="slide-arrow zuzu--arrow"></button>',
+//       responsive: [
+//         {
+//           breakpoint: 1400,
+//           settings: {
+//             slidesToShow: 3,
+//             slidesToScroll: 1
+//           }
+//         },
+//         {
+//           breakpoint: 992,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 1
+//           }
+//         },
+//         {
+//           breakpoint: 767,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             arrows: false
+//           }
+//         }
     
-      ]
-    });
-  }
+//       ]
+//     });
+//   }
 
 /*--------------------------------------------------------------
 NEXTO SLIDER TWO
 --------------------------------------------------------------*/
-var nexto_slider_two = $('.zuzu--slider-two');
-if( nexto_slider_two.is_exist()){
-    nexto_slider_two.slick({
+var zuzu_card_slider = $('.zuzu-card-slider');
+if( zuzu_card_slider.is_exist()){
+    zuzu_card_slider.slick({
     infinite: true,
-    slidesToShow: 5, 
+    slidesToShow: 6, 
     slidesToScroll: 1,
     arrows: false,
     dots: false,
@@ -545,7 +478,7 @@ if( nexto_slider_two.is_exist()){
 /*--------------------------------------------------------------
 NEXTO TEXT SLIDER
 --------------------------------------------------------------*/
-var nexto_text_slider = $('.zuzu--text-slider');
+var nexto_text_slider = $('.zuzu-text-slider');
 if(nexto_text_slider.is_exist()){
   nexto_text_slider.slick({
   infinite: true,
@@ -620,42 +553,27 @@ if (popup_youtube.is_exist()){
 }
 
 
-/*--------------------------------------------------------------
-zuzu CARD SLIDER V6
---------------------------------------------------------------*/
-var zuzu_card_slider = $('.zuzu-card-slider');
-  if(zuzu_card_slider.is_exist()){
-    zuzu_card_slider.slick({
-      infinite: true,
-      slidesToShow: 1, 
-      slidesToScroll: 1,
-      arrows: true,
-      autoplay: true,
-	    autoplaySpeed: 2000,
-      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-			nextArrow: '<button class="slide-arrow zuzu--arrow"></button>',
-    });
-  }
+
 /*--------------------------------------------------------------
 zuzu THUMB MOVE JS INIT_EVENT
 --------------------------------------------------------------*/
-  const image = document.querySelector(".zuzu-tilt");
+// const image = document.querySelector(".zuzu-tilt");
 
-image.addEventListener("mousemove", event => {
-  const { top, bottom, left, right } = event.target.getBoundingClientRect();
+// image.addEventListener("mousemove", event => {
+//   const { top, bottom, left, right } = event.target.getBoundingClientRect();
 
-  const middleX = (right - left) / 2;
-  const middleY = (bottom - top) / 2;
+//   const middleX = (right - left) / 2;
+//   const middleY = (bottom - top) / 2;
 
-  const clientX = event.clientX;
-  const clientY = event.clientY;
+//   const clientX = event.clientX;
+//   const clientY = event.clientY;
 
-  const offsetX = (clientX - middleX) / middleX;
-  const offsetY = (middleY - clientY) / middleY;
+//   const offsetX = (clientX - middleX) / middleX;
+//   const offsetY = (middleY - clientY) / middleY;
 
-  event.target.style.transform = `perspective(1000px) rotateY(${offsetX *
-    5}deg) rotateX(${offsetY * 5}deg) scale3d(1, 1, 1)`;
-});
+//   event.target.style.transform = `perspective(1000px) rotateY(${offsetX *
+//     5}deg) rotateX(${offsetY * 5}deg) scale3d(1, 1, 1)`;
+// });
 
 
 
