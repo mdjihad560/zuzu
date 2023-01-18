@@ -70,6 +70,13 @@
         background-color: var(--gray-10);
       }
     }
+    &.deep-blue{
+      color: var(--gray-10);
+      background-color: var(--primary-600);
+      &:hover{
+        background-color: var(--gray-800);
+      }
+    }
   }
   &.btn-white{
     color: var(--gray-800);
@@ -85,6 +92,13 @@
     &:hover{
       color: var(--primary-600);
       background-color: var(--gray-10);
+    }
+  }
+  &.btn-deep-blue{
+    color: var(--gray-10);
+    background-color: var(--primary-600);
+    &:hover{
+      background-color: var(--gray-800);
     }
   }
   &.btn-pink{

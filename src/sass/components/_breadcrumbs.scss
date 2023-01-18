@@ -1,23 +1,13 @@
-.zuzu-breadcrumb-section{
-  padding: 188px 0 120px;
-  position: relative;
-  background-color: var(--warning-400);
-  @include max(991px) {
-    padding: 150px 0 80px;
-  }
-  @include max(767px) {
-    padding: 130px 0 60px;
-  }
-  @include max(479px) {
-    padding: 100px 0 60px;
-  }
-}
+
 .breadcrumbs {
   text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   h1{
+    font-weight: 800;
     @include max(575px) {
       margin-bottom: 10px;
-      line-height: 20px;
     }
   }
   
@@ -41,22 +31,19 @@
   }
 }
 
-.zuzu-shape8 {
-  position: absolute;
-  top: 32%;
-  -webkit-animation: float 3s ease-in-out infinite;
-  animation: float 3s ease-in-out infinite;
-  @include max(991px) {
-    display: none;
+.dark{
+  h1{
+    color: var(--gray-10);
   }
-}
-.zuzu-shape9 {
-  position: absolute;
-  right: 4%;
-  bottom: 14%;
-  -webkit-animation: float 3s ease-in-out infinite;
-  animation: float 3s ease-in-out infinite;
-  @include max(991px) {
-    display: none;
+  .breadcrumb {
+    .breadcrumb-item {
+      color: var(--gray-10);
+      a {
+        color: var(--gray-10);
+      }
+      &.active{
+        font-weight: 600;
+      }
+    }
   }
 }

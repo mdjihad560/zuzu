@@ -273,3 +273,28 @@
   }
 
 }
+
+// iconbox7 about page
+.zuzu-iconbox{
+  &-wrap7{
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    text-align: center;
+    background-color: var(--gray-10);
+    &.dark{
+      background-color: var(--gray-500);
+      .zuzu-iconbox-data7{
+        h4{
+          color: var(--gray-10);
+        }
+        p{
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+  &-icon7{
+    margin-bottom: 30px;
+  }
+}
