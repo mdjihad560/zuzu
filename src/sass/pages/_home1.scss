@@ -1,0 +1,101 @@
+.zuzu-go-top {
+  position:fixed;
+  bottom: 10%;
+  right: 3%;
+  z-index: 0;
+  z-index: 99;
+  display:none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  &:before{
+      content: "";
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      position: absolute;
+      background-color: var(--primary-600);
+      transform: translate(-50%, -50%)
+  }
+  img{
+      transform: rotate(-90deg);
+  }
+}
+// home v1
+.zuzu-thumb{
+  @include max(991px) {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.zuzu-bank-card-wrap {
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+.zuzu-bank-card1 {
+  position: absolute;
+  top: -73px;
+  right: 20px;
+  -webkit-animation: float 4s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+  @include max(991px) {
+    right: 100px;
+  }
+  @include max(767px) {
+    top: -35px;
+    right: 77px;
+    width: 420px;
+  }
+  @include max(575px) {
+    width: auto;
+  }
+}
+
+.zuzu-chart-thumb {
+  margin-top: 56px;
+  margin-bottom: 10px;
+}
+
+
+.icon-rotate {
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.zuzu-circle-thumb {
+  float: right;
+  -webkit-animation: rotate-animation 40s infinite linear;
+  -moz-animation: rotate-animation 40s infinite linear;
+  -o-animation: rotate-animation 40s infinite linear;
+  animation: rotate-animation 40s infinite linear;
+  @include max(991px) {
+    margin-bottom: 30px;
+    float: none;
+    text-align: center;
+  }
+}

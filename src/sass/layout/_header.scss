@@ -49,21 +49,6 @@ header.zuzu-header-section.zuzu-header-dark.sticky-menu .zuzu-header-btn.black{
   }
 }
 
-.zuzu-responsive-btn{
-  display: none;
-  margin-top: 40px;
-  padding: 0 15px;
-  .zuzu--btn.zuzu--menu-btn1, 
-  .zuzu--btn.zuzu--menu-btn2, 
-  .zuzu--btn.zuzu--menu-btn3{
-    margin: 25px 0 0;
-    padding: 0 33px;
-  }
-  @include max(991px) {
-    display: block;
-  }
-}
-
 .brand-logo.zuzu-menu-left {
   margin-right: 50px;
 }

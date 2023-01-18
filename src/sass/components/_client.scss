@@ -1,32 +1,21 @@
 // client section
 .zuzu-client-section{
-  padding: 75px 0 80px;
+  padding: 75px 0 120px;
+  @include max(991px) {
+    padding: 80px 0 100px;
+  }
   @include max(767px) {
-    padding: 60px 0;
-  }
-}
-.zuzu-client-title{
-  margin-bottom: 50px;
-  text-align: center;
-  &.text-white{
-    h5{
-      color: var(--gray-10);
-    }
-  }
-  h5{
-    font-size: 20px;
-    line-height: 32px;
-    margin: 0;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    font-family: $body-font;
-    
+    padding: 80px 0;
   }
 }
 
-.zuzu-brand-logo{
-  margin: 10px 0;
+
+.zuzu-client-slider-item{
   img{
-    opacity: 0.7;
+    opacity: 0.6;
+    transition: all 0.4s;
+  }
+  &:hover img{
+    opacity: 1;
   }
 }

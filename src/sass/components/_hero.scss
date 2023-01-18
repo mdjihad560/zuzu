@@ -100,13 +100,14 @@
           width: auto;
         }
       }
+      .waves {
+          width: 130px;
+          height: 130px;
+          left: -38px;
+          top: -38px;
+      }
     }
-    .waves {
-      width: 130px;
-      height: 130px;
-      left: -38px;
-      top: -38px;
-  }
+    
     
 }
 .zuzu-hero-card1 {
@@ -435,6 +436,7 @@
 // hero v5
 .zuzu-hero-section5 {
   padding-top: 120px;
+  background-color: #080808;
 }
 .zuzu-hero-content5 {
   margin-top: 50px;

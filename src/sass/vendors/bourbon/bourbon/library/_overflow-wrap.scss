@@ -20,6 +20,5 @@
 
 @mixin overflow-wrap($wrap: break-word) {
   word-wrap: $wrap;
-  // stylelint-disable-zuzu--line order/properties-alphabetical-order
   overflow-wrap: $wrap;
 }

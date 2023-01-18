@@ -88,3 +88,17 @@
   color: var(--gray-800)!important;
   background-color: var(--gray-10)!important;
 }
+
+// v5
+.zuzu-cta3-wrap{
+  padding: 80px;
+  position: relative;
+  border-radius: 20px;
+  background-color: var(--gray-800);
+  @include max(991px) {
+    padding: 60px;
+  }
+  @include max(767px) {
+    padding: 40px;
+  }
+}
