@@ -1,0 +1,711 @@
+.zuzu-blog{
+  &-wrap{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background-color: var(--gray-400);
+    &:hover .zuzu-blog-thumb img{
+      transform: scale(1.05);
+    }
+  }
+  &-thumb{
+    overflow: hidden;
+    position: relative;
+    img{
+      transition: all 0.4s;
+    }
+  }
+  &-content{
+    padding: 30px 20px 30px 30px;
+    h3{
+      font-family: $body-font;
+    }
+  }
+  &-meta{
+    margin-bottom: 25px;
+    ul{
+      display: flex;
+      li{
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        padding-left: 30px;
+        color: var(--gray-800);
+        margin-right: 20px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          color: rgba(19, 17, 26, 0.8);
+        }
+        img{
+          left: 0;
+          top: 2px;
+          position: absolute;
+        }
+      }
+    }
+  }
+  &-category {
+    top: 24px;
+    right: 24px;
+    position: absolute;
+}
+}
+
+// sidebar
+.zuzu-blog-sidebar-item{
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-700);
+  background-color: var(--gray-400);
+  h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: $body-font;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+  p{
+    color: var(--gray-800);
+    margin-bottom: 15px;
+  }
+}
+
+.zuzu-product-search{
+  position: relative;
+}
+#zuzu-search-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.zuzu-product-search{
+  input[type=search]{
+    padding: 15px 20px!important;
+    border-radius: 40px;
+    background-color: var(--gray-10);
+  }
+}
+.zuzu-sidebar-item-title{
+  margin-bottom: 27px;
+  h6 {
+    margin: 0;
+    padding: 0 0 5px;
+    display: inline-block;
+    font-family: $body-font;
+    border-bottom: 2px solid var(--gray-800);
+  }
+}
+ 
+
+.zuzu-categories{
+  ul{
+    li{
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+      &:first-child{
+        padding-top: 0;
+      }
+      &:last-child{
+        padding-bottom: 0;
+        border: none;
+      }
+      a{
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--gray-800);
+        transition: all 0.4s;
+        &:hover{
+          color: var(--primary-600);
+        }
+      }
+    }
+  }
+}
+
+.zuzu-recent-post-item{
+  position: relative;
+  margin-bottom: 20px;
+ 
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .zuzu-blog-meta{
+    margin-bottom: 5px;
+    ul {
+      li{
+        font-size: 14px;
+        img{
+          top: 5px;
+        }
+      }
+    }
+  
+  }
+  h6{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    a{
+      color: var(--gray-800);
+    }
+  }
+  .zuzu-blog-category {
+    top: 10px;
+    right: 10px;
+}
+  .zuzu-btn{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 15px;
+  }
+}
+
+.zuzu-recent-post-thumb{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.zuzu-tags{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      a{
+        font-size: 16px;
+        opacity: .8;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 0px 20px;
+        display: block;
+        font-weight: 600;
+        transition: all 0.4s;
+        border-radius: 5.71991px;
+        color: var(--gray-800);
+        background: rgba(19, 17, 26, 0.06);
+        &:hover{
+          color: var(--gray-10);
+          background-color: var(--primary-600);
+        }
+      }
+    }
+  }
+}
+
+.zuzu-blog-subscription{
+  input[type=email]{
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid var(--gray-800)!important;
+    
+  }
+}
+
+#zuzu-buynow-btn{
+  height: 55px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  color: #fff;
+  margin-top: 15px;
+  transition: all 0.4s;
+  background-color: var(--primary-600);
+  &:hover{
+    background-color: var(--gray-800);
+  }
+}
+
+.zuzu-blog-sidebar{
+  @include max(991px) {
+    margin-top: 40px;
+  }
+}
+
+// dark version
+.dark-version{
+  .zuzu-blog-wrap{
+    background-color: var(--gray-800);
+  }
+  .zuzu-blog-meta{
+    ul{
+      li{
+        color: rgba(255, 255, 255, 0.8);
+        a{
+          color: rgba(255, 255, 255, 0.8);
+        }
+        img{
+          top: 5px;
+        }
+      }
+    }
+  }
+  .zuzu-blog-content{
+    h3, h5{
+        color: var(--gray-10);
+    }
+    p{
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .page-item .page-link{
+    color: rgba(255, 255, 255, 0.8);
+    &.active{
+      color: white;
+      background-color: var(--primary-600);
+    }
+  }
+  .zuzu-blog-sidebar-item{
+    background-color: var(--gray-800);
+    border: 1px solid var(--gray-800);
+    p{
+      color: var(--gray-10);
+    }
+  }
+  .zuzu-product-search input[type=search], 
+  .zuzu-blog-subscription input[type=email]{
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-10)!important;
+
+  }
+  .zuzu-sidebar-item-title {
+    h6{
+      color: var(--gray-10);
+      border-bottom: 1px solid var(--gray-10);
+    }
+  }
+  .zuzu-categories {
+    ul{
+      li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        &:last-child{
+          border: none;
+        }
+        a{
+          color: var(--gray-10);
+          &:hover{
+            color: var(--primary-600);
+          }
+        }
+      }
+    }
+  }
+  .zuzu-recent-post-item h6 a{
+    color: var(--gray-10);
+  }
+  .zuzu-tags {
+    ul{
+      li{
+        a{
+          color: var(--gray-10);
+          background: rgba(255, 255, 255, 0.06);
+          &:hover{
+            background-color: var(--primary-600);
+          }
+        }
+      }
+    }
+  }
+  .zuzu-product-search input[type=search]::-webkit-input-placeholder, 
+  .zuzu-blog-subscription input[type=email]::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    var(--gray-10);
+    opacity: 0.8;
+}
+.zuzu-product-search input[type=search]:-moz-placeholder, 
+  .zuzu-blog-subscription input[type=email]:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    var(--gray-10);
+   opacity:  0.8;
+}
+.zuzu-product-search input[type=search]::-moz-placeholder, 
+  .zuzu-blog-subscription input[type=email]::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    var(--gray-10);
+   opacity:  0.8;
+}
+.zuzu-product-search input[type=search]:-ms-input-placeholder, 
+  .zuzu-blog-subscription input[type=email]:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    var(--gray-10);
+   opacity: 0.8;
+}
+.zuzu-product-search input[type=search]::-ms-input-placeholder, 
+  .zuzu-blog-subscription input[type=email]::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    var(--gray-10);
+   opacity: 0.8;
+}
+
+.zuzu-product-search input[type=search]::placeholder, 
+  .zuzu-blog-subscription input[type=email]::placeholder{ /* Most modern browsers support this now. */
+   color:    var(--gray-10);
+   opacity: 0.8;
+}
+}
+.zuzu-product-search input[type=search]::-webkit-input-placeholder, 
+  .zuzu-blog-subscription input[type=email]::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    var(--gray-800);
+    opacity: 0.8;
+}
+.zuzu-product-search input[type=search]:-moz-placeholder, 
+  .zuzu-blog-subscription input[type=email]:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    var(--gray-800);
+   opacity:  0.8;
+}
+.zuzu-product-search input[type=search]::-moz-placeholder, 
+  .zuzu-blog-subscription input[type=email]::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    var(--gray-800);
+   opacity:  0.8;
+}
+.zuzu-product-search input[type=search]:-ms-input-placeholder, 
+  .zuzu-blog-subscription input[type=email]:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    var(--gray-800);
+   opacity: 0.8;
+}
+.zuzu-product-search input[type=search]::-ms-input-placeholder, 
+  .zuzu-blog-subscription input[type=email]::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    var(--gray-800);
+   opacity: 0.8;
+}
+
+.zuzu-product-search input[type=search]::placeholder, 
+  .zuzu-blog-subscription input[type=email]::placeholder{ /* Most modern browsers support this now. */
+   color:    var(--gray-800);
+   opacity: 0.8;
+}
+
+// blog single
+.zuzu-blog-wrap.zuzu-single-blog{
+  padding: 0;
+  overflow: visible;
+  background-color: transparent;
+  .zuzu-blog-thumb {
+    margin-bottom: 30px;
+    img{
+      border-radius: 10px;
+    }
+  }
+  &:hover .zuzu-blog-thumb img{
+    transform: scale(1);
+  }
+}
+
+.zuzu-user{
+  &-wrap{
+    margin: 40px 0;
+    padding: 29px;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--gray-400);
+    @include max(767px) {
+      display: block;
+    }
+  }
+  &-thumb{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 15px;
+    border-radius: 100%;
+    @include max(767px) {
+      margin: 0 0 15px;
+    }
+    img{
+      object-fit: cover;
+    }
+  }
+  &-data{
+    ul{
+      margin-bottom: 15px;
+      li{
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 700;
+        padding-right: 20px;
+        position: relative;
+        &:last-child{
+          padding-right: 0;
+        }
+        &:before {
+          content: "";
+          right: 4px;
+          top: 13px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50px;
+          position: absolute;
+          background-color: rgba(19, 17, 26, 0.8);
+        }
+        &:last-child:before{
+          content: none;
+        }
+        span{
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.zuzu-social-icon-normal{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  @include max(767px) {
+    top: 50px;
+  }
+  ul{
+    li{
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        path{
+          fill: var(--gray-800);
+        }
+        &:hover path{
+          fill: var(--primary-600);
+        }
+      }
+    }
+  }
+}
+.zuzu-blog-post-wrap {
+  padding: 40px 0;
+  margin-bottom: 40px;
+  border-top: 1px solid rgba(19, 17, 26, 0.1);
+  border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+}
+a.zuzu-blog-post-arrow {
+  font-weight: 600;
+  color: rgba(19,17,26,.8);
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--gray-400);
+  img{
+    margin-right: 25px;
+  }
+}
+
+
+.zuzu-comment{
+  &-section{
+    h5{
+      margin-bottom: 40px;
+    }
+  }
+  &-item{
+    display: flex;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+    &:last-child{
+      margin: 0;
+    }
+    &:nth-child(2) {
+      padding-left: 90px;
+      @include max(767px) {
+        padding-left: 0;
+      }
+    }
+  }
+  &-author{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 20px;
+    &.author2{
+      width: 50px;
+      height: 50px;
+    }
+    img{
+      object-fit: cover;
+    }
+    &-data{
+      margin-right: 90px;
+      @include max(767px) {
+        margin-right: 0;
+      }
+      h6{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $body-font;
+        margin-bottom: 5px;
+      }
+      span{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+a.comment-reply {
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--gray-800);
+  transition: all 0.4s;
+  &:hover{
+    color: var(--primary-600);
+  }
+}
+
+.zuzu-comment-field-section {
+    h5{
+      margin-bottom: 30px;
+    }
+    .zuzu-main-field {
+      textarea{
+        height: 250px;
+        @include max(991px) {
+          height: 150px;
+        }
+        @include max(767px) {
+          height: 100px;
+          border-radius: 15px;
+        }
+      }
+    }
+}
+.zuzu-main-filed-wrap{
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.06);
+}
+.zuzu-main-field{
+  margin-bottom: 24px;
+}
+
+button#zuzu-comment-submit {
+  width: 196px;
+  height: 55px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.4s;
+  color: var(--gray-10);
+  background-color: var(--primary-600);
+  &:hover{
+    background-color: var(--gray-800);
+  }
+}
+
+// blog single dark
+.dark-version{
+  .zuzu-user-wrap{
+    background-color: var(--gray-800);
+  }
+  .zuzu-user-data{
+    ul{
+      li{
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+  .zuzu-social-icon-normal{
+    ul{
+      li{
+        a{
+          path{
+            fill: var(--gray-10);
+            transition: all 0.4s;
+          }
+          &:hover path{
+            fill: var(--primary-600);
+          }
+        }
+      }
+    }
+  }
+  a.zuzu-blog-post-arrow{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: var(--gray-800);
+  }
+  .zuzu-comment-author-data{
+    h6{
+      color: var(--gray-10);
+    }
+    span{
+      color: rgba(255,255,255,.8);
+    }
+  }
+  a.comment-reply{
+    color: var(--gray-10);
+    &:hover{
+      color: var(--primary-600);
+    }
+  }
+  .zuzu-main-filed-wrap{
+    border-radius: 10px;
+    background-color: var(--gray-800);
+  }
+  .zuzu-main-field{
+    input, 
+    textarea{
+      color: var(--gray-10);
+      background-color: var(--gray-500);
+      border: 1px solid var(--gray-800)!important;
+    }
+  }
+
+  button#zuzu-comment-submit {
+    background-color: var(--primary-600);
+    &:hover{
+      color: var(--primary-600);
+      background-color: var(--gray-10);
+    }
+  }
+  
+  .zuzu-main-field input::-webkit-input-placeholder, 
+  .zuzu-main-field textarea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    #fff;
+    opacity: 0.5;
+  }
+  .zuzu-main-field input:-moz-placeholder,  
+  .zuzu-main-field textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  0.5;
+  }
+  .zuzu-main-field input::-moz-placeholder, 
+  .zuzu-main-field textarea::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  0.5;
+  }
+  .zuzu-main-field input:-ms-input-placeholder,  
+  .zuzu-main-field textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    #fff;
+   opacity: 0.5;
+  }
+  .zuzu-main-field input::-ms-input-placeholder,  
+  .zuzu-main-field textarea::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    #fff;
+   opacity: 0.5;
+  }
+  .zuzu-main-field input::placeholder, 
+  .zuzu-main-field textarea::placeholder{ /* Most modern browsers support this now. */
+   color:    #fff;
+   opacity: 0.5;
+  }
+  
+}

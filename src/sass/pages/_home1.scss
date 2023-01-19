@@ -22,7 +22,18 @@
   img{
       transform: rotate(-90deg);
   }
+  &.pink{
+    &:before{
+      background-color: var(--pink-500);
+    }
+  }
+  &.deep-pink{
+    &:before{
+      background-color: var(--pink-600);
+    }
+  }
 }
+
 // home v1
 .zuzu-thumb{
   @include max(991px) {

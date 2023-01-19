@@ -185,7 +185,7 @@ if(zuzu_testimonial_slider.is_exist()){
     {
       breakpoint: 991,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         centerPadding: '70px',
       }
       

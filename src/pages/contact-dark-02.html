@@ -1,0 +1,99 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "Contact Us" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/header-inner-dark.html" %} 
+
+<div class="zuzu-breadcrumb-section bg-gray-800 dark">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+<div class="scetion zuzu-section-padding dark-version bg-gray-500">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="zuzu-contact-info-column">
+          <div class="zuzu-default-content sm dark">
+            <h2>Get In Touch</h2>
+            <p>Feel free to contact us with your any questions, contact our team and let’s schedule a call</p>
+          </div>
+          <div class="zuzu-contact-info-wrap">
+            <a href="#">
+              <div class="zuzu-contact-info">
+                <div class="zuzu-contact-info-icon">
+                  <img src="assets/images/svg/call.svg" alt="">
+                </div>
+                <div class="zuzu-contact-info-data">
+                  <h5>Call us</h5>
+                  <p>+088-234-6534-563 <br/>
+                    +088-145-0083-2911</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="zuzu-contact-info">
+                <div class="zuzu-contact-info-icon">
+                  <img src="assets/images/svg/message.svg" alt="">
+                </div>
+                <div class="zuzu-contact-info-data">
+                  <h5>Email us</h5>
+                  <p>example@gmail.com <br/>
+                    companyname@gmail.com</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="zuzu-contact-info m-0">
+                <div class="zuzu-contact-info-icon">
+                  <img src="assets/images/svg/map.svg" alt="">
+                </div>
+                <div class="zuzu-contact-info-data">
+                  <h5>Office address</h5>
+                  <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="zuzu-map">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="zuzu-default-content dark">
+          <h5> <strong>Contact Us</strong> </h5>
+          <h2 class="font-black">Send us a message</h2>
+          <p>If you have any questions about membership or usage, please fill out the form and our team will get back to you within 24 hours.</p>
+        </div>
+        <div class="zuzu-main-filed-wrap">
+          <form action="#">
+              <div class="zuzu-main-field">
+                <label>Your name</label>
+                <input type="text" placeholder="Name*">
+              </div>
+              <div class="zuzu-main-field">
+                <label>Email address</label>
+                <input type="email" placeholder="Email Address*">
+              </div>
+              <div class="zuzu-main-field">
+                <label>Write your message</label>
+                <textarea name="textarea" placeholder="Write your comment"></textarea>
+              </div>
+              <button id="zuzu-comment-submit">Post Comment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="zuzu-go-top">
+	<img src="assets/images/svg/arrow-right-white.svg" alt="">
+</div>
+
+{% include "../templates/layout/header-footer/footer-inner-dark.html" %} 
+  
+{% endblock %}

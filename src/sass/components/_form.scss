@@ -11,19 +11,23 @@ input, textarea {
   width: 100%;
   height: 60px;
   color:  var(--gray-800);
-  border-radius: 10px;
+  border-radius: 50px;
   background-color: transparent;
   padding: 15px 30px !important;
   border: none!important;
   transition: all 0.4s;
   border: 1px solid var(--gray-700)!important;
+  @include max(991px) {
+    height: 55px;
+  }
 }
 input:focus, textarea:focus{
-  border: 1px solid var(--warning-500)!important;
+  border: 1px solid var(--primary-500)!important;
 }
 textarea {
   height: 150px;
   resize: none;
+  border-radius: 20px;
   @include max(767px) {
     height: 100px;
   }

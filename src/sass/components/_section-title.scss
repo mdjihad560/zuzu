@@ -64,6 +64,9 @@
     padding: 110px 0 60px;
   }
 }
+.extra-padding{
+  padding-top: 30px;
+}
 .zuzu-section-footer{
   padding: 100px 0;
   @include max(767px) {

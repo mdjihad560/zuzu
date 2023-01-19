@@ -19,16 +19,16 @@ a.zuzu-popup,
 }
 
 a.zuzu-popup img{
-  -webkit-animation: rotate-animation 10s infinite linear;
-  -moz-animation: rotate-animation 10s infinite linear;
-  -o-animation: rotate-animation 10s infinite linear;
-  animation: rotate-animation 10s infinite linear;
-  &:hover{
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-  }
+  // -webkit-animation: rotate-animation 10s infinite linear;
+  // -moz-animation: rotate-animation 10s infinite linear;
+  // -o-animation: rotate-animation 10s infinite linear;
+  // animation: rotate-animation 10s infinite linear;
+  // &:hover{
+  //   -webkit-animation-play-state: paused;
+  //   -moz-animation-play-state: paused;
+  //   -o-animation-play-state: paused;
+  //   animation-play-state: paused;
+  // }
   @include max(991px) {
     width: 90px;
   }
