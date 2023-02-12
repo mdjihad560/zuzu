@@ -11,9 +11,9 @@
     "gulp",
     "starter"
   ],
-  "author": "mthemeus (mthemeus.com)",
+  "author": "favdevs (favdevs.com)",
   "license": "ISC",
-  "homepage": "mthemeus",
+  "homepage": "favdevs",
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",

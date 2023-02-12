@@ -14,7 +14,6 @@
   overflow: hidden;
   position: relative;
   padding: 170px 0 130px;
-  background-color: var(--warning-400);
   @include max(991px) {
     padding: 150px 0 100px;
   }
@@ -238,8 +237,8 @@
 .zuzu-hero-box {
   position: absolute;
 	transform-style: preserve-3d;
-  -webkit-animation: rotate 8s linear infinite;
-          animation: rotate 8s linear infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 
   @include max(991px) {
     display: none;
@@ -274,7 +273,28 @@
     }
 }
 
-@-webkit-keyframes rotate {
+// @keyframes hero_animation {
+//   from {
+//     transform: rotateY(0deg);
+//   }
+
+//   to {
+//     transform: rotateY(360deg);
+//   }
+// }
+
+@keyframes hero_animation {
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+
+
+}
+
+@-webkit-keyframes hero_animation {
   0% {
     transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0deg) translateX(0) translateY(0px) translateZ(0px) skew(0deg, 0deg);
   }
@@ -474,8 +494,10 @@
   }
   .zuzu-hero-shape {
       position: absolute;
-      -webkit-animation: rotate 8s linear infinite;
-          animation: rotate 8s linear infinite;
+      -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
           &.shape-one{
             top: 39%;
           }
@@ -496,4 +518,14 @@
 
 }
 
-
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
